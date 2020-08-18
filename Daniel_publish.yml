@@ -2,8 +2,7 @@ swagger: '2.0'
 info:
   description: |-
     #### The Unisphere Management REST API is a set of objects (resources), operations, and attributes that let you interact with Unisphere Management functionality through web browsers and application programs. 
-    #### In a REST API, each resource type (object) has a unique Universal Resource Identifier (URI), and each resource instance has a unique identifier. 
-    Users can interact with the resources exposed by the API by accessing resources using HTTP GET, POST, and DELETE requests. The server sends response data in JavaScript Object Notation (JSON) format.
+    #### In a REST API, each resource type (object) has a unique Universal Resource Identifier (URI), and each resource instance has a unique identifier. Users can interact with the resources exposed by the API by accessing resources using HTTP GET, POST, and DELETE requests. The server sends response data in JavaScript Object Notation (JSON) format.
     #### By REST API, users can do all of the following resource management:
     * Configure system settings for the storage system.
     * Manage the connections to remote systems, including manage host configurations, iSCSI initiators, and iSCSI CHAP accounts.
@@ -249,7 +248,7 @@ paths:
       tags:
       - aclUser
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: aclUser_get
       produces:
       - application/json
       parameters:
@@ -432,7 +431,7 @@ paths:
       tags:
       - alert
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: alert_get
       produces:
       - application/json
       parameters:
@@ -585,7 +584,7 @@ paths:
       tags:
       - alertConfig
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: alertConfig_get
       produces:
       - application/json
       parameters:
@@ -964,7 +963,7 @@ paths:
       tags:
       - alertConfigSNMPTarget
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: alertConfigSNMPTarget_get
       produces:
       - application/json
       parameters:
@@ -1212,7 +1211,7 @@ paths:
       tags:
       - alertEmailConfig
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: alertEmailConfig_get
       produces:
       - application/json
       parameters:
@@ -1363,7 +1362,7 @@ paths:
       tags:
       - archive
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: archive_get
       produces:
       - application/json
       parameters:
@@ -1477,7 +1476,7 @@ paths:
       tags:
       - autodownloadSoftwareVersion
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: autodownloadSoftwareVersion_get
       produces:
       - application/json
       parameters:
@@ -1660,7 +1659,7 @@ paths:
       tags:
       - backingStore
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: backingStore_get
       produces:
       - application/json
       parameters:
@@ -1952,7 +1951,7 @@ paths:
       tags:
       - basicSystemInfo
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: basicSystemInfo_get
       produces:
       - application/json
       parameters:
@@ -2111,7 +2110,7 @@ paths:
       tags:
       - battery
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: battery_get
       produces:
       - application/json
       parameters:
@@ -2269,7 +2268,7 @@ paths:
       tags:
       - blockDedup
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: blockDedup_get
       produces:
       - application/json
       parameters:
@@ -2420,7 +2419,7 @@ paths:
       tags:
       - candidateSoftwareVersion
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: candidateSoftwareVersion_get
       produces:
       - application/json
       parameters:
@@ -2679,7 +2678,7 @@ paths:
       tags:
       - capabilityProfile
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: capabilityProfile_get
       produces:
       - application/json
       parameters:
@@ -3121,7 +3120,7 @@ paths:
       tags:
       - cifsServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: cifsServer_get
       produces:
       - application/json
       parameters:
@@ -3613,7 +3612,7 @@ paths:
       tags:
       - cifsShare
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: cifsShare_get
       produces:
       - application/json
       parameters:
@@ -4092,7 +4091,7 @@ paths:
       tags:
       - configCaptureResult
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: configCaptureResult_get
       produces:
       - application/json
       parameters:
@@ -4294,7 +4293,7 @@ paths:
       tags:
       - coreDump
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: coreDump_get
       produces:
       - application/json
       parameters:
@@ -4551,7 +4550,7 @@ paths:
       tags:
       - crl
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: crl_get
       produces:
       - application/json
       parameters:
@@ -4763,7 +4762,7 @@ paths:
       tags:
       - dae
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: dae_get
       produces:
       - application/json
       parameters:
@@ -4946,7 +4945,7 @@ paths:
       tags:
       - dataCollectionResult
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: dataCollectionResult_get
       produces:
       - application/json
       parameters:
@@ -5149,7 +5148,7 @@ paths:
       tags:
       - datastore
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: datastore_get
       produces:
       - application/json
       parameters:
@@ -5407,7 +5406,7 @@ paths:
       tags:
       - dedupSchedule
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: dedupSchedule_get
       produces:
       - application/json
       parameters:
@@ -5808,7 +5807,7 @@ paths:
       tags:
       - dhsmConnection
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: dhsmConnection_get
       produces:
       - application/json
       parameters:
@@ -6074,7 +6073,7 @@ paths:
       tags:
       - dhsmServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: dhsmServer_get
       produces:
       - application/json
       parameters:
@@ -6231,7 +6230,7 @@ paths:
       tags:
       - disk
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: disk_get
       produces:
       - application/json
       parameters:
@@ -6463,7 +6462,7 @@ paths:
       tags:
       - diskGroup
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: diskGroup_get
       produces:
       - application/json
       parameters:
@@ -6621,7 +6620,7 @@ paths:
       tags:
       - dnsServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: dnsServer_get
       produces:
       - application/json
       parameters:
@@ -6774,7 +6773,7 @@ paths:
       tags:
       - dpe
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: dpe_get
       produces:
       - application/json
       parameters:
@@ -6932,7 +6931,7 @@ paths:
       tags:
       - encryption
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: encryption_get
       produces:
       - application/json
       parameters:
@@ -7119,7 +7118,7 @@ paths:
       tags:
       - esrsParam
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: esrsParam_get
       produces:
       - application/json
       parameters:
@@ -7655,7 +7654,7 @@ paths:
       tags:
       - esrsPolicyManager
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: esrsPolicyManager_get
       produces:
       - application/json
       parameters:
@@ -7893,7 +7892,7 @@ paths:
       tags:
       - ethernetPort
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ethernetPort_get
       produces:
       - application/json
       parameters:
@@ -8179,7 +8178,7 @@ paths:
       tags:
       - event
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: event_get
       produces:
       - application/json
       parameters:
@@ -8293,7 +8292,7 @@ paths:
       tags:
       - fan
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fan_get
       produces:
       - application/json
       parameters:
@@ -8451,7 +8450,7 @@ paths:
       tags:
       - fastCache
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fastCache_get
       produces:
       - application/json
       parameters:
@@ -9089,7 +9088,7 @@ paths:
       tags:
       - fastVP
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fastVP_get
       produces:
       - application/json
       parameters:
@@ -9260,7 +9259,7 @@ paths:
       tags:
       - fcInitiatorPort
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fcInitiatorPort_get
       produces:
       - application/json
       parameters:
@@ -9374,7 +9373,7 @@ paths:
       tags:
       - fcPort
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fcPort_get
       produces:
       - application/json
       parameters:
@@ -9604,7 +9603,7 @@ paths:
       tags:
       - fcSession
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fcSession_get
       produces:
       - application/json
       parameters:
@@ -9718,7 +9717,7 @@ paths:
       tags:
       - feature
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: feature_get
       produces:
       - application/json
       parameters:
@@ -9970,7 +9969,7 @@ paths:
       tags:
       - fileDNSServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fileDNSServer_get
       produces:
       - application/json
       parameters:
@@ -10234,7 +10233,7 @@ paths:
       tags:
       - fileEventsPool
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fileEventsPool_get
       produces:
       - application/json
       parameters:
@@ -10529,7 +10528,7 @@ paths:
       tags:
       - fileEventsPublisher
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fileEventsPublisher_get
       produces:
       - application/json
       parameters:
@@ -10823,7 +10822,7 @@ paths:
       tags:
       - fileInterface
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fileInterface_get
       produces:
       - application/json
       parameters:
@@ -11222,7 +11221,7 @@ paths:
       tags:
       - fileKerberosServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fileKerberosServer_get
       produces:
       - application/json
       parameters:
@@ -11514,7 +11513,7 @@ paths:
       tags:
       - fileLDAPServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fileLDAPServer_get
       produces:
       - application/json
       parameters:
@@ -11808,7 +11807,7 @@ paths:
       tags:
       - fileNDMPServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fileNDMPServer_get
       produces:
       - application/json
       parameters:
@@ -12051,7 +12050,7 @@ paths:
       tags:
       - fileNISServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fileNISServer_get
       produces:
       - application/json
       parameters:
@@ -12216,7 +12215,7 @@ paths:
       tags:
       - filesystem
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: filesystem_get
       produces:
       - application/json
       parameters:
@@ -12479,7 +12478,7 @@ paths:
       tags:
       - fsnPort
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: fsnPort_get
       produces:
       - application/json
       parameters:
@@ -13020,7 +13019,7 @@ paths:
       tags:
       - ftpServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ftpServer_get
       produces:
       - application/json
       parameters:
@@ -13384,7 +13383,7 @@ paths:
       tags:
       - host
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: host_get
       produces:
       - application/json
       parameters:
@@ -13991,7 +13990,7 @@ paths:
       tags:
       - hostContainer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostContainer_get
       produces:
       - application/json
       parameters:
@@ -14882,7 +14881,7 @@ paths:
       tags:
       - hostGroup
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostGroup_get
       produces:
       - application/json
       parameters:
@@ -15694,7 +15693,7 @@ paths:
       tags:
       - hostGroupLUN
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostGroupLUN_get
       produces:
       - application/json
       parameters:
@@ -15808,7 +15807,7 @@ paths:
       tags:
       - hostGroupVmwareLUN
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostGroupVmwareLUN_get
       produces:
       - application/json
       parameters:
@@ -16020,7 +16019,7 @@ paths:
       tags:
       - hostIPPort
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostIPPort_get
       produces:
       - application/json
       parameters:
@@ -16409,7 +16408,7 @@ paths:
       tags:
       - hostInitiator
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostInitiator_get
       produces:
       - application/json
       parameters:
@@ -16755,7 +16754,7 @@ paths:
       tags:
       - hostInitiatorPath
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostInitiatorPath_get
       produces:
       - application/json
       parameters:
@@ -16869,7 +16868,7 @@ paths:
       tags:
       - hostLUN
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostLUN_get
       produces:
       - application/json
       parameters:
@@ -16983,7 +16982,7 @@ paths:
       tags:
       - hostVVolDatastore
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: hostVVolDatastore_get
       produces:
       - application/json
       parameters:
@@ -17097,7 +17096,7 @@ paths:
       tags:
       - importSession
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: importSession_get
       produces:
       - application/json
       parameters:
@@ -17920,7 +17919,7 @@ paths:
       tags:
       - installedSoftwareVersion
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: installedSoftwareVersion_get
       produces:
       - application/json
       parameters:
@@ -18145,7 +18144,7 @@ paths:
       tags:
       - ioLimitPolicy
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ioLimitPolicy_get
       produces:
       - application/json
       parameters:
@@ -18424,7 +18423,7 @@ paths:
       tags:
       - ioLimitRule
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ioLimitRule_get
       produces:
       - application/json
       parameters:
@@ -18670,7 +18669,7 @@ paths:
       tags:
       - ioLimitSetting
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ioLimitSetting_get
       produces:
       - application/json
       parameters:
@@ -18823,7 +18822,7 @@ paths:
       tags:
       - ioModule
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ioModule_get
       produces:
       - application/json
       parameters:
@@ -19001,7 +19000,7 @@ paths:
       tags:
       - ipInterface
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ipInterface_get
       produces:
       - application/json
       parameters:
@@ -19211,7 +19210,7 @@ paths:
       tags:
       - ipPort
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ipPort_get
       produces:
       - application/json
       parameters:
@@ -19534,7 +19533,7 @@ paths:
       tags:
       - iscsiInitiatorInterface
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: iscsiInitiatorInterface_get
       produces:
       - application/json
       parameters:
@@ -19695,7 +19694,7 @@ paths:
       tags:
       - iscsiNode
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: iscsiNode_get
       produces:
       - application/json
       parameters:
@@ -20026,7 +20025,7 @@ paths:
       tags:
       - iscsiPortal
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: iscsiPortal_get
       produces:
       - application/json
       parameters:
@@ -20187,7 +20186,7 @@ paths:
       tags:
       - iscsiSession
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: iscsiSession_get
       produces:
       - application/json
       parameters:
@@ -20301,7 +20300,7 @@ paths:
       tags:
       - iscsiSettings
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: iscsiSettings_get
       produces:
       - application/json
       parameters:
@@ -20568,7 +20567,7 @@ paths:
       tags:
       - job
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: job_get
       produces:
       - application/json
       parameters:
@@ -20801,7 +20800,7 @@ paths:
       tags:
       - kmipServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: kmipServer_get
       produces:
       - application/json
       parameters:
@@ -20993,7 +20992,7 @@ paths:
       tags:
       - lcc
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: lcc_get
       produces:
       - application/json
       parameters:
@@ -21283,7 +21282,7 @@ paths:
       tags:
       - ldapServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ldapServer_get
       produces:
       - application/json
       parameters:
@@ -21530,7 +21529,7 @@ paths:
       tags:
       - license
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: license_get
       produces:
       - application/json
       parameters:
@@ -21785,7 +21784,7 @@ paths:
       tags:
       - linkAggregation
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: linkAggregation_get
       produces:
       - application/json
       parameters:
@@ -22174,7 +22173,7 @@ paths:
       tags:
       - loginSessionInfo
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: loginSessionInfo_get
       produces:
       - application/json
       parameters:
@@ -22329,7 +22328,7 @@ paths:
       tags:
       - lun
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: lun_get
       produces:
       - application/json
       parameters:
@@ -22487,7 +22486,7 @@ paths:
       tags:
       - memoryModule
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: memoryModule_get
       produces:
       - application/json
       parameters:
@@ -22644,7 +22643,7 @@ paths:
       tags:
       - metric
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: metric_get
       produces:
       - application/json
       parameters:
@@ -22757,7 +22756,7 @@ paths:
       tags:
       - metricCollection
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: metricCollection_get
       produces:
       - application/json
       parameters:
@@ -23024,7 +23023,7 @@ paths:
       tags:
       - metricRealTimeQuery
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: metricRealTimeQuery_get
       produces:
       - application/json
       parameters:
@@ -23137,7 +23136,7 @@ paths:
       tags:
       - metricService
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: metricService_get
       produces:
       - application/json
       parameters:
@@ -23447,7 +23446,7 @@ paths:
       tags:
       - mgmtInterface
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: mgmtInterface_get
       produces:
       - application/json
       parameters:
@@ -23605,7 +23604,7 @@ paths:
       tags:
       - mgmtInterfaceSettings
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: mgmtInterfaceSettings_get
       produces:
       - application/json
       parameters:
@@ -23883,7 +23882,7 @@ paths:
       tags:
       - moveSession
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: moveSession_get
       produces:
       - application/json
       parameters:
@@ -24208,7 +24207,7 @@ paths:
       tags:
       - nasServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: nasServer_get
       produces:
       - application/json
       parameters:
@@ -25046,7 +25045,7 @@ paths:
       tags:
       - nfsCloudProvider
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: nfsCloudProvider_get
       produces:
       - application/json
       parameters:
@@ -25371,7 +25370,7 @@ paths:
       tags:
       - nfsServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: nfsServer_get
       produces:
       - application/json
       parameters:
@@ -25760,7 +25759,7 @@ paths:
       tags:
       - nfsShare
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: nfsShare_get
       produces:
       - application/json
       parameters:
@@ -26161,7 +26160,7 @@ paths:
       tags:
       - ntpServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ntpServer_get
       produces:
       - application/json
       parameters:
@@ -26486,7 +26485,7 @@ paths:
       tags:
       - pool
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: pool_get
       produces:
       - application/json
       parameters:
@@ -27679,7 +27678,7 @@ paths:
       tags:
       - poolConsumer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: poolConsumer_get
       produces:
       - application/json
       parameters:
@@ -27837,7 +27836,7 @@ paths:
       tags:
       - poolConsumerAllocation
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: poolConsumerAllocation_get
       produces:
       - application/json
       parameters:
@@ -27951,7 +27950,7 @@ paths:
       tags:
       - poolUnit
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: poolUnit_get
       produces:
       - application/json
       parameters:
@@ -28109,7 +28108,7 @@ paths:
       tags:
       - powerSupply
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: powerSupply_get
       produces:
       - application/json
       parameters:
@@ -28267,7 +28266,7 @@ paths:
       tags:
       - preferredInterfaceSettings
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: preferredInterfaceSettings_get
       produces:
       - application/json
       parameters:
@@ -28457,7 +28456,7 @@ paths:
       tags:
       - quotaConfig
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: quotaConfig_get
       produces:
       - application/json
       parameters:
@@ -28695,7 +28694,7 @@ paths:
       tags:
       - raidGroup
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: raidGroup_get
       produces:
       - application/json
       parameters:
@@ -28853,7 +28852,7 @@ paths:
       tags:
       - remoteInterface
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: remoteInterface_get
       produces:
       - application/json
       parameters:
@@ -29108,7 +29107,7 @@ paths:
       tags:
       - remoteSyslog
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: remoteSyslog_get
       produces:
       - application/json
       parameters:
@@ -29373,7 +29372,7 @@ paths:
       tags:
       - remoteSystem
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: remoteSystem_get
       produces:
       - application/json
       parameters:
@@ -29911,7 +29910,7 @@ paths:
       tags:
       - replicationInterface
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: replicationInterface_get
       produces:
       - application/json
       parameters:
@@ -30369,7 +30368,7 @@ paths:
       tags:
       - replicationSession
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: replicationSession_get
       produces:
       - application/json
       parameters:
@@ -31232,7 +31231,7 @@ paths:
       tags:
       - role
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: role_get
       produces:
       - application/json
       parameters:
@@ -31498,7 +31497,7 @@ paths:
       tags:
       - roleMapping
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: roleMapping_get
       produces:
       - application/json
       parameters:
@@ -31777,7 +31776,7 @@ paths:
       tags:
       - route
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: route_get
       produces:
       - application/json
       parameters:
@@ -31942,7 +31941,7 @@ paths:
       tags:
       - rpChapSettings
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: rpChapSettings_get
       produces:
       - application/json
       parameters:
@@ -32097,7 +32096,7 @@ paths:
       tags:
       - sasPort
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: sasPort_get
       produces:
       - application/json
       parameters:
@@ -32255,7 +32254,7 @@ paths:
       tags:
       - scheduleTimezone
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: scheduleTimezone_get
       produces:
       - application/json
       parameters:
@@ -32407,7 +32406,7 @@ paths:
       tags:
       - securitySettings
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: securitySettings_get
       produces:
       - application/json
       parameters:
@@ -32574,7 +32573,7 @@ paths:
       tags:
       - serviceAction
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: serviceAction_get
       produces:
       - application/json
       parameters:
@@ -32862,7 +32861,7 @@ paths:
       tags:
       - serviceContract
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: serviceContract_get
       produces:
       - application/json
       parameters:
@@ -32996,7 +32995,7 @@ paths:
       tags:
       - serviceInfo
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: serviceInfo_get
       produces:
       - application/json
       parameters:
@@ -33210,7 +33209,7 @@ paths:
       tags:
       - smtpServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: smtpServer_get
       produces:
       - application/json
       parameters:
@@ -33509,7 +33508,7 @@ paths:
       tags:
       - snap
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: snap_get
       produces:
       - application/json
       parameters:
@@ -34585,7 +34584,7 @@ paths:
       tags:
       - snapSchedule
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: snapSchedule_get
       produces:
       - application/json
       parameters:
@@ -34918,7 +34917,7 @@ paths:
       tags:
       - softwareUpgradeSession
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: softwareUpgradeSession_get
       produces:
       - application/json
       parameters:
@@ -35105,7 +35104,7 @@ paths:
       tags:
       - ssc
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ssc_get
       produces:
       - application/json
       parameters:
@@ -35263,7 +35262,7 @@ paths:
       tags:
       - ssd
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: ssd_get
       produces:
       - application/json
       parameters:
@@ -35421,7 +35420,7 @@ paths:
       tags:
       - storageProcessor
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: storageProcessor_get
       produces:
       - application/json
       parameters:
@@ -35606,7 +35605,7 @@ paths:
       tags:
       - storageResource
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: storageResource_get
       produces:
       - application/json
       parameters:
@@ -40308,7 +40307,7 @@ paths:
       tags:
       - storageResourceCapabilityProfile
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: storageResourceCapabilityProfile_get
       produces:
       - application/json
       parameters:
@@ -40422,7 +40421,7 @@ paths:
       tags:
       - storageTier
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: storageTier_get
       produces:
       - application/json
       parameters:
@@ -40848,7 +40847,7 @@ paths:
       tags:
       - supportAsset
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: supportAsset_get
       produces:
       - application/json
       parameters:
@@ -41006,7 +41005,7 @@ paths:
       tags:
       - supportProxy
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: supportProxy_get
       produces:
       - application/json
       parameters:
@@ -41192,7 +41191,7 @@ paths:
       tags:
       - supportService
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: supportService_get
       produces:
       - application/json
       parameters:
@@ -41374,7 +41373,7 @@ paths:
       tags:
       - system
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: system_get
       produces:
       - application/json
       parameters:
@@ -41678,7 +41677,7 @@ paths:
       tags:
       - systemCapacity
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: systemCapacity_get
       produces:
       - application/json
       parameters:
@@ -41792,7 +41791,7 @@ paths:
       tags:
       - systemInformation
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: systemInformation_get
       produces:
       - application/json
       parameters:
@@ -41997,7 +41996,7 @@ paths:
       tags:
       - systemLimit
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: systemLimit_get
       produces:
       - application/json
       parameters:
@@ -42155,7 +42154,7 @@ paths:
       tags:
       - systemTime
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: systemTime_get
       produces:
       - application/json
       parameters:
@@ -42311,7 +42310,7 @@ paths:
       tags:
       - tbn
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: tbn_get
       produces:
       - application/json
       parameters:
@@ -42425,7 +42424,7 @@ paths:
       tags:
       - tbnConfig
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: tbnConfig_get
       produces:
       - application/json
       parameters:
@@ -42584,7 +42583,7 @@ paths:
       tags:
       - technicalAdvisory
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: technicalAdvisory_get
       produces:
       - application/json
       parameters:
@@ -42807,7 +42806,7 @@ paths:
       tags:
       - tenant
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: tenant_get
       produces:
       - application/json
       parameters:
@@ -43168,7 +43167,7 @@ paths:
       tags:
       - treeQuota
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: treeQuota_get
       produces:
       - application/json
       parameters:
@@ -43348,7 +43347,7 @@ paths:
       tags:
       - tsCloudProvider
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: tsCloudProvider_get
       produces:
       - application/json
       parameters:
@@ -43531,7 +43530,7 @@ paths:
       tags:
       - uncommittedPort
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: uncommittedPort_get
       produces:
       - application/json
       parameters:
@@ -43760,7 +43759,7 @@ paths:
       tags:
       - upgradeSession
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: upgradeSession_get
       produces:
       - application/json
       parameters:
@@ -43998,7 +43997,7 @@ paths:
       tags:
       - urServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: urServer_get
       produces:
       - application/json
       parameters:
@@ -44249,7 +44248,7 @@ paths:
       tags:
       - user
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: user_get
       produces:
       - application/json
       parameters:
@@ -44606,7 +44605,7 @@ paths:
       tags:
       - userQuota
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: userQuota_get
       produces:
       - application/json
       parameters:
@@ -44758,7 +44757,7 @@ paths:
       tags:
       - virtualDisk
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: virtualDisk_get
       produces:
       - application/json
       parameters:
@@ -45083,7 +45082,7 @@ paths:
       tags:
       - virtualVolume
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: virtualVolume_get
       produces:
       - application/json
       parameters:
@@ -45449,7 +45448,7 @@ paths:
       tags:
       - virusChecker
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: virusChecker_get
       produces:
       - application/json
       parameters:
@@ -45607,7 +45606,7 @@ paths:
       tags:
       - vlanInfo
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: vlanInfo_get
       produces:
       - application/json
       parameters:
@@ -45768,7 +45767,7 @@ paths:
       tags:
       - vm
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: vm_get
       produces:
       - application/json
       parameters:
@@ -45926,7 +45925,7 @@ paths:
       tags:
       - vmDisk
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: vmDisk_get
       produces:
       - application/json
       parameters:
@@ -46179,7 +46178,7 @@ paths:
       tags:
       - vmwareNasPEServer
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: vmwareNasPEServer_get
       produces:
       - application/json
       parameters:
@@ -46293,7 +46292,7 @@ paths:
       tags:
       - vmwarePE
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: vmwarePE_get
       produces:
       - application/json
       parameters:
@@ -46548,7 +46547,7 @@ paths:
       tags:
       - x509Certificate
       description: 'Instance query'
-      operationId: Object.name_get
+      operationId: x509Certificate_get
       produces:
       - application/json
       parameters:
