@@ -57880,2581 +57880,975 @@ If this value is not null then call home suppression is enabled, otherwise call 
   AccessPolicyEnum:
     type: integer
     description: 0:Native, 1:Unix, 2:Windows
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   ACEAccessLevelEnum:
     type: integer
     description: 1:Read, 2:Write, 4:Full
-    enum: 
-      -1
-      -2
-      -4
+    enum: [1,2,4]
   ACEAccessTypeEnum:
     type: integer
     description: 0:Deny, 1:Grant, 2:None
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   AdvancedDeduplicationUnsupportedReasonEnum:
     type: integer
     description: 0:None, 1:Feature_Disabled, 2:License_Uninstalled, 3:Pool_Type, 4:System_Model, 5:Flash_Not_Enough
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
+    enum: [0,1,2,3,4,5]
   AlertStateEnum:
     type: integer
     description: 0:Active_Manual, 1:Active_Auto, 2:Inactive, 3:Updating
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   AllocationStatusEnum:
     type: integer
     description: 0:Not_Started, 1:Running, 2:Completed, 3:Failed
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   AUSizeEnum:
     type: integer
     description: 8,192:AuSize_8K, 16,384:AuSize_16K, 32,768:AuSize_32K, 65,536:AuSize_64K
-    enum: 
-      -8192
-      -16384
-      -32768
-      -65536
+    enum: [8192,16384,32768,65536]
   AuthenticationTypeEnum:
     type: integer
     description: 0:Anonymous, 1:Simple, 2:Kerberos
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   AuthTypeEnum:
     type: integer
     description: 0:None, 1:Plain, 2:Login, 3:CRAM_MD5, 4:DIGEST_MD5
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   AutodownloadSoftwareTypeEnum:
     type: integer
     description: 0:Software, 1:Firmware, 2:LanguagePack, 3:DynamicPUHC
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   BackendStorageTypeEnum:
     type: integer
     description: 0:Unknown, 1:VNX3, 2:CloudArray
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   BindContextEnum:
     type: integer
     description: 0:Normal, 1:RebindStart
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   BlockDedupRateEnum:
     type: integer
     description: 1:High, 2:Medium, 3:Low, 4:None
-    enum: 
-      -1
-      -2
-      -3
-      -4
+    enum: [1,2,3,4]
   BlockDedupStateEnum:
     type: integer
     description: 0:Invalid, 1:Active, 2:Idle, 3:Pending, 4:Paused, 5:Completed, 6:Off
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
+    enum: [0,1,2,3,4,5,6]
   BlockHostAccessEnum:
     type: integer
     description: 0:Off, 1:On, 2:Mixed
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   CapabilityServiceLevelEnum:
     type: integer
     description: 0:Basic, 1:Bronze, 2:Silver, 3:Gold, 4:Platinum
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   CapabilityTypeEnum:
     type: integer
     description: 0:FastCache, 1:DiskTier, 2:RaidType, 3:SpaceEfficiency, 4:TieringPolicy, 5:UsageTag, 6:ServiceLevel
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
+    enum: [0,1,2,3,4,5,6]
   CertificateTypeEnum:
     type: integer
     description: 1:CA, 2:Server, 3:Client, 4:TrustedPeer, 99:Unknown
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -99
+    enum: [1,2,3,4,99]
   CHAPSecretTypeEnum:
     type: integer
     description: 0:Binary, 1:ASCII
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   CifsShareACEPrivilegeEnum:
     type: integer
     description: 0:None, 1:Read, 2:Write, 3:FullControl
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   CifsShareOfflineAvailabilityEnum:
     type: integer
     description: 0:Manual, 1:Documents, 2:Programs, 3:None, 255:Invalid
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -255
+    enum: [0,1,2,3,255]
   CIFSTypeEnum:
     type: integer
     description: 1:Cifs_Share, 2:Cifs_Snapshot
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   CompressionStatusEnum:
     type: integer
     description: 0:Disabled, 1:Enabled, 65,535:Mixed
-    enum: 
-      -0
-      -1
-      -65535
+    enum: [0,1,65535]
   CompressionUnsupportedReasonEnum:
     type: integer
     description: 0:None, 1:Feature_Disabled, 2:License_Uninstalled, 3:Pool_Type, 4:Filesystem_Compression_Not_Supported, 5:Flash_Not_Enough
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
+    enum: [0,1,2,3,4,5]
   ConnectivityTypeEnum:
     type: integer
     description: 0:Unknown, 1:ISCSI_Software, 2:ISCSI_Offload, 3:FC
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   ConnectorTypeEnum:
     type: integer
     description: 0:Unknown, 1:RJ45, 2:LC, 3:MiniSAS_HD, 4:Copper_Pigtail, 5:No_Separable_Connector, 6:NAS_Copper, 7:Not_Present
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
+    enum: [0,1,2,3,4,5,6,7]
   CopyStateEnum:
     type: integer
     description: 3:Unsynchronized, 4:Synchronized, 13:Skewed, 14:Mixed
-    enum: 
-      -3
-      -4
-      -13
-      -14
+    enum: [3,4,13,14]
   CRLReasonCodeEnum:
     type: integer
     description: 0:Unspecified, 1:Key_Compromise, 2:Ca_Compormise, 3:Affiliation_Changed, 4:Superseded, 5:Cessation_Of_Operation, 6:Certificate_Hold, 8:Remove_From_CRL, 9:Privilege_Withdrawn, 10:Aa_Compromise, 99:Unknown
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -8
-      -9
-      -10
-      -99
+    enum: [0,1,2,3,4,5,6,8,9,10,99]
   DataCollectionProfileEnum:
     type: integer
     description: 0:Default, 1:Performance_Assessment, 2:Performance_Trace, 3:Other, 4:Minimum
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   DataReductionStatusEnum:
     type: integer
     description: 0:Disabled, 1:Enabled, 65,535:Mixed
-    enum: 
-      -0
-      -1
-      -65535
+    enum: [0,1,65535]
   DatastoreTypeEnum:
     type: integer
     description: 0:Unknown, 1:VMFS3, 2:VMFS5, 3:VMFS6
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   DayOfWeekEnum:
     type: integer
     description: 1:Sunday, 2:Monday, 3:Tuesday, 4:Wednesday, 5:Thursday, 6:Friday, 7:Saturday
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
+    enum: [1,2,3,4,5,6,7]
   DCMigrationStateEnum:
     type: integer
     description: 1:Normal, 2:PrepareForMigration, 3:SourceDisabledForIO, 4:SourceMigrationInProgress, 5:SourceMigrationCompleted, 6:SourceAborted, 2,989:Unknown
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -2989
+    enum: [1,2,3,4,5,6,2989]
   DedupStateEnum:
     type: integer
     description: 0:Enabled, 1:Suspended, 2:Disabled
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   DedupStatusEnum:
     type: integer
     description: 0:Disabled, 1:Enabled, 65,535:Mixed
-    enum: 
-      -0
-      -1
-      -65535
+    enum: [0,1,65535]
   DhsmConnectionModeEnum:
     type: integer
     description: 0:Enabled, 1:Disabled, 2:RecallOnly
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   DiskTechnologyEnum:
     type: integer
     description: 1:SAS, 2:NL_SAS, 6:SAS_FLASH_2, 7:SAS_FLASH_3, 8:SAS_FLASH_4, 9:SAS_FLASH_5, 10:NVMe_FLASH_1, 11:NVMe_FLASH_2, 50:Mixed, 99:Virtual
-    enum: 
-      -1
-      -2
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -50
-      -99
+    enum: [1,2,6,7,8,9,10,11,50,99]
   DiskTierEnum:
     type: integer
     description: 0:ExtremePerformanceTier, 1:PerformanceTier, 2:CapacityTier, 3:ExtremeMultiTier, 4:MultiTier, 5:NvmeExtremePerformanceTier, 6:NvmeExtremeMultiTier
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
+    enum: [0,1,2,3,4,5,6]
   DiskTypeEnum:
     type: integer
     description: 0:Unknown, 5:SAS, 9:SAS_FLASH, 10:NL_SAS, 11:SAS_FLASH_2, 12:SAS_FLASH_3, 16:NVMe_FLASH, 18:NVMe_FLASH_1, 19:NVMe_FLASH_2
-    enum: 
-      -0
-      -5
-      -9
-      -10
-      -11
-      -12
-      -16
-      -18
-      -19
+    enum: [0,5,9,10,11,12,16,18,19]
   DMOLockTypeEnum:
     type: integer
     description: 1:Read, 2:Write
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   DMONotificationTypeEnum:
     type: integer
     description: 0:Creation, 1:Modification, 2:Deletion
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   DNSServerOriginEnum:
     type: integer
     description: 0:Unknown, 1:Static, 2:DHCP
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   EnclosureTypeEnum:
     type: integer
     description: 20:Derringer_6G_SAS_DAE, 26:Pinecone_6G_SAS_DAE, 27:Steeljaw_6G_SAS_DPE, 28:Ramhorn_6G_SAS_DPE, 29:Tabasco_12G_SAS_DAE, 30:Ancho_12G_SAS_DAE, 32:Naga_12G_SAS_DAE, 36:Miranda_12G_SAS_DPE, 37:Rhea_12G_SAS_DPE, 38:Scorp_12G_SAS_DPE, 100:Virtual_DPE, 999:Unsupported_Enclosure
-    enum: 
-      -20
-      -26
-      -27
-      -28
-      -29
-      -30
-      -32
-      -36
-      -37
-      -38
-      -100
-      -999
+    enum: [20,26,27,28,29,30,32,36,37,38,100,999]
   EncryptionModeEnum:
     type: integer
     description: 16:Unencrypted, 32:Controller_Based_Encryption
-    enum: 
-      -16
-      -32
+    enum: [16,32]
   EncryptionStatusEnum:
     type: integer
     description: 65,535:Invalid, 0:Fbe_Invalid, 1:Not_Encrypting, 16:Encrypting, 32:Encrypted, 64:Scrubbing, 254:No_License, 255:Unsupported
-    enum: 
-      -65535
-      -0
-      -1
-      -16
-      -32
-      -64
-      -254
-      -255
+    enum: [65535,0,1,16,32,64,254,255]
   EPSpeedValuesEnum:
     type: integer
     description: 0:Auto, 10:_10Mbps, 100:_100Mbps, 1,000:_1Gbps, 10,000:_10Gbps, 25,000:_25Gbps, 40,000:_40Gbps, 100,000:_100Gbps, 1,000,000:_1Tbps
-    enum: 
-      -0
-      -10
-      -100
-      -1000
-      -10000
-      -25000
-      -40000
-      -100000
-      -1000000
+    enum: [0,10,100,1000,10000,25000,40000,100000,1000000]
   EsrsConfigStatusEnum:
     type: integer
     description: 0:Not_Attempted, 1:Success, 2:Failed, 3:Success_CallHome_Only, 4:Success_One_Way, 5:Success_Two_Way
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
+    enum: [0,1,2,3,4,5]
   EsrsLevelEnum:
     type: integer
     description: 0:Not_Set, 1:Callhome_Only, 2:One_Way, 3:Two_Way
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   EsrsPolicyManagerStatusEnum:
     type: integer
     description: 0:Disabled, 1:Connected, 2:Not_Connected, 3:Unknown
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   EsrsProxyStatusEnum:
     type: integer
     description: 0:Disabled, 1:Enabled, 2:Connected, 3:Not_Connected, 4:Unknown
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   EsrsStatusEnum:
     type: integer
     description: 0:Disabled, 1:Connected, 2:Not_Connected, 3:Unknown, 5:Managed_Offline, 6:Managed_Missing, 7:Managed_Removed, 11:Unmanaged_Online, 12:Unmanaged_Offline, 13:Unmanaged_Missing, 14:Unmanaged_Removed, 15:PendingAdd_Online, 16:PendingAdd_Offline, 17:PendingAdd_Missing, 18:PendingAdd_Removed, 19:PendingDelete_Online, 20:PendingDelete_Offline, 21:PendingDelete_Missing, 22:PendingDelete_Removed, 23:Managed_UnRegistered
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -5
-      -6
-      -7
-      -11
-      -12
-      -13
-      -14
-      -15
-      -16
-      -17
-      -18
-      -19
-      -20
-      -21
-      -22
-      -23
+    enum: [0,1,2,3,5,6,7,11,12,13,14,15,16,17,18,19,20,21,22,23]
   ESXFilesystemBlockSizeEnum:
     type: integer
     description: 1:_1MB, 2:_2MB, 4:_4MB, 8:_8MB
-    enum: 
-      -1
-      -2
-      -4
-      -8
+    enum: [1,2,4,8]
   ESXFilesystemMajorVersionEnum:
     type: integer
     description: 3:VMFS_3, 5:VMFS_5, 6:VMFS_6
-    enum: 
-      -3
-      -5
-      -6
+    enum: [3,5,6]
   ESXMountProtocolEnum:
     type: integer
     description: 3:NFSv3, 4:NFSv4
-    enum: 
-      -3
-      -4
+    enum: [3,4]
   EthernetPortStatusEnum:
     type: integer
     description: 0:Unknown, 2:OK, 3:Degraded, 32,784:Link_Up, 32,785:Link_Down, 32,786:Speed_Negotiation_Failed, 33,024:Uninitialized, 33,025:Empty, 33,026:Missing, 33,027:Faulted, 33,028:Unavailable, 33,029:Disabled, 33,280:SFP_Not_Present, 33,281:Module_Not_Present, 33,282:Port_Not_Present, 33,283:Missing_SFP, 33,284:Missing_Module, 33,285:Incorrect_SFP_Type, 33,286:Incorrect_Module, 33,287:SFP_Read_Error, 33,288:Unsupported_SFP, 33,289:Module_Read_Error, 33,290:Exceeded_Maximum_Limits, 33,291:Module_Powered_Off, 33,292:Unsupported_Module, 33,293:Database_Read_Error, 33,294:Faulted_SFP, 33,295:Hardware_Fault, 33,296:Disabled_User_Initiated, 33,297:Disabled_Encryption_Required, 33,298:Disabled_Hardware_Fault
-    enum: 
-      -0
-      -2
-      -3
-      -32784
-      -32785
-      -32786
-      -33024
-      -33025
-      -33026
-      -33027
-      -33028
-      -33029
-      -33280
-      -33281
-      -33282
-      -33283
-      -33284
-      -33285
-      -33286
-      -33287
-      -33288
-      -33289
-      -33290
-      -33291
-      -33292
-      -33293
-      -33294
-      -33295
-      -33296
-      -33297
-      -33298
+    enum: [0,2,3,32784,32785,32786,33024,33025,33026,33027,33028,33029,33280,33281,33282,33283,33284,33285,33286,33287,33288,33289,33290,33291,33292,33293,33294,33295,33296,33297,33298]
   EventCategoryEnum:
     type: integer
     description: 0:User, 1:Audit, 2:Authentication
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   FastCacheOperationalStatusEnum:
     type: integer
     description: 0:Unknown, 1:Other, 2:OK, 3:Degraded, 4:Stressed, 5:Predictive_Failure, 6:Error, 7:Non_Recoverable_Error, 8:Starting, 9:Stopping, 10:Stopped, 11:In_Service, 12:No_Contact, 13:Lost_Communication, 14:Aborted, 15:Dormant, 16:Supporting_Entity_in_Error, 17:Completed, 18:Power_Mode, 32,769:No_Backend_Object, 32,770:Under_Construction
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
-      -14
-      -15
-      -16
-      -17
-      -18
-      -32769
-      -32770
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,32769,32770]
   FastCacheStateEnum:
     type: integer
     description: 0:Off, 1:On
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   FastVPRelocationRateEnum:
     type: integer
     description: 1:High, 2:Medium, 3:Low, 4:None
-    enum: 
-      -1
-      -2
-      -3
-      -4
+    enum: [1,2,3,4]
   FastVPStatusEnum:
     type: integer
     description: 1:Not_Applicable, 2:Paused, 3:Active, 4:Not_started, 5:Completed, 6:Stopped_by_user, 7:Failed
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
+    enum: [1,2,3,4,5,6,7]
   FastVPUnsupportedReasonEnum:
     type: integer
     description: 0:None, 1:Feature_Disabled, 2:License_Uninstalled, 3:Single_Tier
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   FcPortSpeedEnum:
     type: integer
     description: 0:Unknown, 1:_1Gbps, 2:_2Gbps, 4:_4Gbps, 8:_8Gbps, 16:_16Gbps, 32:_32Gbps
-    enum: 
-      -0
-      -1
-      -2
-      -4
-      -8
-      -16
-      -32
+    enum: [0,1,2,4,8,16,32]
   FcPortStateEnum:
     type: integer
     description: 0:Unknown, 1:Online, 2:Offline
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   FcPortTypeEnum:
     type: integer
     description: 0:Others, 1:NPort, 2:LPort
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   FcSpeedEnum:
     type: integer
     description: 0:Auto, 1:_1Gbps, 2:_2Gbps, 4:_4Gbps, 8:_8Gbps, 16:_16Gbps, 32:_32Gbps
-    enum: 
-      -0
-      -1
-      -2
-      -4
-      -8
-      -16
-      -32
+    enum: [0,1,2,4,8,16,32]
   FcStatusEnum:
     type: integer
     description: 0:Unknown, 2:OK, 3:Degraded, 32,784:Link_Up, 32,785:Link_Down, 33,024:Uninitialized, 33,025:Empty, 33,026:Missing, 33,027:Faulted, 33,028:Unavailable, 33,029:Disabled, 33,280:SFP_Not_Present, 33,281:Module_Not_Present, 33,282:Port_Not_Present, 33,283:Missing_SFP, 33,284:Missing_Module, 33,285:Incorrect_SFP_Type, 33,286:Incorrect_Module, 33,287:SFP_Read_Error, 33,288:Unsupported_SFP, 33,289:Module_Read_Error, 33,290:Exceeded_Maximum_Limits, 33,291:Module_Powered_Off, 33,292:Unsupported_Module, 33,293:Database_Read_Error, 33,294:Faulted_SFP, 33,295:Hardware_Fault, 33,296:Disabled_User_Initiated, 33,297:Disabled_Encryption_Required, 33,298:Disabled_Hardware_Fault
-    enum: 
-      -0
-      -2
-      -3
-      -32784
-      -32785
-      -33024
-      -33025
-      -33026
-      -33027
-      -33028
-      -33029
-      -33280
-      -33281
-      -33282
-      -33283
-      -33284
-      -33285
-      -33286
-      -33287
-      -33288
-      -33289
-      -33290
-      -33291
-      -33292
-      -33293
-      -33294
-      -33295
-      -33296
-      -33297
-      -33298
+    enum: [0,2,3,32784,32785,33024,33025,33026,33027,33028,33029,33280,33281,33282,33283,33284,33285,33286,33287,33288,33289,33290,33291,33292,33293,33294,33295,33296,33297,33298]
   FeatureReasonEnum:
     type: integer
     description: 1:FeatureReasonUnlicensed, 2:FeatureReasonExpiredLicense, 3:FeatureReasonPlatformRestriction, 4:FeatureReasonExcluded
-    enum: 
-      -1
-      -2
-      -3
-      -4
+    enum: [1,2,3,4]
   FeatureStateEnum:
     type: integer
     description: 1:FeatureStateDisabled, 2:FeatureStateEnabled, 3:FeatureStateHidden
-    enum: 
-      -1
-      -2
-      -3
+    enum: [1,2,3]
   FileEventsPublisherFTLevelTypeEnum:
     type: integer
     description: 0:Ignore, 1:Accumulate, 2:Guarantee, 3:Deny
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   FileEventTypesEnum:
     type: integer
     description: 0:OpenFileNoAccess, 1:OpenFileRead, 2:OpenFileWrite, 3:CreateFile, 4:CreateDir, 5:DeleteFile, 6:DeleteDir, 7:CloseModified, 8:CloseUnmodified, 9:RenameFile, 10:RenameDir, 11:SetAclFile, 12:SetAclDir, 13:OpenDir, 14:CloseDir, 15:FileRead, 16:FileWrite, 17:SetSecFile, 18:SetSecDir, 19:OpenFileReadOffline, 20:OpenFileWriteOffline
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
-      -14
-      -15
-      -16
-      -17
-      -18
-      -19
-      -20
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
   FileInterfaceRoleEnum:
     type: integer
     description: 0:Production, 1:Backup
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   FilesystemSnapAccessTypeEnum:
     type: integer
     description: 1:Checkpoint, 2:Protocol
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   FilesystemTypeEnum:
     type: integer
     description: 1:FileSystem, 2:VMware
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   FLRVersionEnum:
     type: integer
     description: 0:Off, 1:Enterprise, 2:Compliance
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   FSFormatEnum:
     type: integer
     description: 0:UFS32, 2:UFS64
-    enum: 
-      -0
-      -2
+    enum: [0,2]
   FSLockingPolicyEnum:
     type: integer
     description: 0:Advisory, 1:Mandatory
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   FSRenamePolicyEnum:
     type: integer
     description: 0:All_Rename_Allowed, 1:SMB_Rename_Forbidden, 2:All_Rename_Forbidden
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   FSSupportedProtocolEnum:
     type: integer
     description: 0:NFS, 1:CIFS, 2:Multiprotocol
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HealthCheckModeEnum:
     type: integer
     description: 0:General, 1:NDU, 2:ODFU
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HealthEnum:
     type: integer
     description: 0:UNKNOWN, 5:OK, 7:OK_BUT, 10:DEGRADED, 15:MINOR, 20:MAJOR, 25:CRITICAL, 30:NON_RECOVERABLE
-    enum: 
-      -0
-      -5
-      -7
-      -10
-      -15
-      -20
-      -25
-      -30
+    enum: [0,5,7,10,15,20,25,30]
   HostContainerPotentialHostImportOptionEnum:
     type: integer
     description: 0:Import_New, 1:Import_Existing, 2:Import_Conflict, 3:Import_Match, 4:Import_Warn
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   HostContainerPotentialHostMatchConditionEnum:
     type: integer
     description: 0:Match_Unknown, 1:Match_UUID, 2:Match_AllInitiators, 3:Match_UUID_AllInitiators, 4:Match_AllNetworkAddresses, 5:Match_UUID_AllNetworkAddresses, 6:Match_AllInitiators_AllNetworkAddresses, 7:Match_UUID_AllInitiators_AllNetworkAddresses, 8:Match_SomeInitiators, 9:Match_UUID_SomeInitiators, 12:Match_AllNetworkAddresses_SomeInitiators, 13:Match_UUID_AllNetworkAddresses_SomeInitiators, 16:Match_SomeNetworkAddresses, 17:Match_UUID_SomeNetworkAddresses, 18:Match_AllInitiators_SomeNetworkAddresses, 19:Match_UUID_AllInitiators_SomeNetworkAddresses, 24:Match_SomeInitiators_SomeNetworkAddresses, 25:Match_UUID_SomeInitiators_SomeNetworkAddresses
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -12
-      -13
-      -16
-      -17
-      -18
-      -19
-      -24
-      -25
+    enum: [0,1,2,3,4,5,6,7,8,9,12,13,16,17,18,19,24,25]
   HostContainerTypeEnum:
     type: integer
     description: 0:UNKNOWN, 1:ESX, 2:VCENTER
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HostGroupAccessMergeTypeEnum:
     type: integer
     description: 0:NoChange, 1:Customized, 2:MergeFromHostGroup, 3:MergeToHostGroup, 4:RemoveAccessFromHostGroup
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   HostGroupTypeEnum:
     type: integer
     description: 0:General, 1:ESX
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   HostInitiatorChapSecretTypeEnum:
     type: integer
     description: 0:CHAPSECRET_TYPE_BINARY, 1:CHAPSECRET_TYPE_ASCII
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   HostInitiatorFailoverModeEnum:
     type: integer
     description: 0:Auto_Trespass, 1:Passive_Not_Ready, 2:DMP_Mode, 3:Passive_Always_Ready, 4:ALUA_Mode
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   HostInitiatorIscsiTypeEnum:
     type: integer
     description: 0:ISCSI_TYPE_UNKNOWN, 1:ISCSI_TYPE_HARDWARE, 2:ISCSI_TYPE_SOFTWARE, 3:ISCSI_TYPE_DEPENDENT
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   HostInitiatorPathTypeEnum:
     type: integer
     description: 0:Manual, 1:ESX_Auto, 2:Other_Auto
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HostInitiatorSourceTypeEnum:
     type: integer
     description: 0:Unknown, 2:HP_Autotrespass, 3:Open_Native, 9:SGI, 10:HP_No_Autotrespass, 19:Dell, 22:Fujitsu_Siemens, 25:Clariion_Array_CMI, 28:Tru64, 31:Recoverpoint
-    enum: 
-      -0
-      -2
-      -3
-      -9
-      -10
-      -19
-      -22
-      -25
-      -28
-      -31
+    enum: [0,2,3,9,10,19,22,25,28,31]
   HostInitiatorTypeEnum:
     type: integer
     description: 0:UNKNOWN, 1:FC, 2:ISCSI
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HostIOSizeEnum:
     type: integer
     description: 8,192:General_8K, 16,384:General_16K, 32,768:General_32K, 65,536:General_64K, 8,193:Exchange2007, 32,769:Exchange2010, 32,770:Exchange2013, 8,194:Oracle, 8,195:SQLServer, 8,196:VMwareHorizon, 32,771:SharePoint, 8,197:SAP
-    enum: 
-      -8192
-      -16384
-      -32768
-      -65536
-      -8193
-      -32769
-      -32770
-      -8194
-      -8195
-      -8196
-      -32771
-      -8197
+    enum: [8192,16384,32768,65536,8193,32769,32770,8194,8195,8196,32771,8197]
   HostLUNAccessEnum:
     type: integer
     description: 0:NoAccess, 1:Production, 2:Snapshot, 3:Both, 65,535:Mixed
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -65535
+    enum: [0,1,2,3,65535]
   HostLUNTypeEnum:
     type: integer
     description: 0:Unknown, 1:LUN, 2:LUN_Snap
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HostManageEnum:
     type: integer
     description: 0:UNKNOWN, 1:VMWARE, 2:OTHERS
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HostOperationalStatusEnum:
     type: integer
     description: 0:Unknown, 1:Other, 2:OK, 3:Degraded, 4:Stressed, 5:Predictive_Failure, 6:Error, 7:Non_Recoverable_Error, 8:Starting, 9:Stopping, 10:Stopped, 11:In_Service, 12:No_Contact, 13:Lost_Communication, 14:Aborted, 15:Dormant, 16:Supporting_Entity_in_Error, 17:Completed, 18:Power_Mode, 19:Temp_Unmounted, 20:Perm_Unmounted, 32,768:Initiators_Config_not_HA, 32,769:No_LoggedIn_Initiator, 32,770:Initiators_Data_Inconsistent, 32,771:Network_Addresses_Data_Inconsistent, 32,772:Tenant_Data_Inconsistent, 34,048:Credential_Invalid, 34,049:Storage_Not_Found, 34,050:Certificate_Invalid
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
-      -14
-      -15
-      -16
-      -17
-      -18
-      -19
-      -20
-      -32768
-      -32769
-      -32770
-      -32771
-      -32772
-      -34048
-      -34049
-      -34050
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,32768,32769,32770,32771,32772,34048,34049,34050]
   HostPortTypeEnum:
     type: integer
     description: 0:IPv4, 1:IPv6, 2:NetworkName
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HostRegistrationTypeEnum:
     type: integer
     description: 0:UNKNOWN, 1:MANUAL, 2:ESXAUTO
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   HostTypeEnum:
     type: integer
     description: 0:Unknown, 1:HostManual, 2:Subnet, 3:NetGroup, 4:RPA, 5:HostAuto, 255:VNXSanCopy
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -255
+    enum: [0,1,2,3,4,5,255]
   HotSparePolicyStatusEnum:
     type: integer
     description: 0:OK, 741:Violated
-    enum: 
-      -0
-      -741
+    enum: [0,741]
   ImportCapabilityEnum:
     type: integer
     description: 0:Importable, 1:Non_importable_internal_error, 2:Non_importable_only_support_vnx, 3:Non_importable_src_vdm_name_in_use_sess_completed, 4:Non_importable_src_vdm_name_in_use_sess_active, 5:Non_importable_src_vdm_name_in_use, 6:Non_importable_no_up_src_clnt_if, 7:Non_importable_no_fs_on_src_vdm, 8:Non_importable_reach_src_fs_limit, 9:Non_importable_nfsv4_not_support, 10:Non_importable_secnfs_not_support, 11:Non_importable_vdm_cannot_have_cifs_server, 12:Non_importable_srcmigif_more_error, 13:Non_importable_srcmigif_error, 14:Non_importable_invalid_vdm, 15:Non_importable_reach_src_if_limit, 16:Non_importable_src_cs_not_primary
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
-      -14
-      -15
-      -16
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
   ImportOpStatusEnum:
     type: integer
     description: 0:Unknown, 7:Non_Recoverable_Error, 32,768:Configuring_Target_Resource, 32,769:Enabling_Target_Resource_Access, 32,770:Migrator_Cannot_Discover_Target_Resource, 32,771:Ready_To_Migrate, 32,772:Initial_Transfer_Inprogress, 32,773:Delta_Transfer_Inprogress, 32,774:Paused, 32,776:Ready_To_Cutover, 32,777:Lost_Communication, 32,779:Target_Luns_Offline, 32,780:Pending, 32,781:Cutover_Sync_Complete, 32,782:Session_Cleanup_Complete, 32,783:Final_Transfer_Inprogress, 33,532:Session_Exceed_Limit, 33,024:Initialized, 33,025:Starting, 33,026:Start_Failed, 33,027:Migrating_Data, 33,028:Migrating_Data_Stopped, 33,029:Migrating_Data_Failed, 33,030:Migrating_Data_Failed_Stopped, 33,031:Migrating_Configuration, 33,032:Migrating_Configuration_Failed, 33,033:Migrating_Configuration_Paused, 33,280:Cutting_Over, 33,281:Cutover_Failed, 33,282:Syncing_Data, 33,283:Syncing_Data_Stopped, 33,284:Syncing_Data_Failed, 33,285:Syncing_Data_Failed_Stopped, 33,536:Ready_To_Complete, 33,537:Completing, 33,538:Complete_Failed, 33,539:Completed, 33,540:Cancelling, 33,541:Cancel_Failed, 33,542:Cancelled, 33,543:Migrating_Data_Stopping, 33,544:Syncing_Data_Stopping, 33,547:Provisioning_Target_Paused, 34,048:FS_OK, 34,049:FS_Source_IO_Failure, 34,050:FS_Destination_IO_Failure, 34,051:FS_Connection_Failure, 34,052:FS_Unrecoverable_Failure, 34,304:VMO_Faulted, 34,305:VMO_Offline, 34,560:Element_Import_OK, 34,561:Element_Import_Unable_To_Locate_Device, 34,562:Element_Import_Bad_Block_On_Source_Device, 34,563:Element_Import_Unable_To_Access_Device, 34,564:Element_Import_LU_Trespassed, 34,565:Element_Import_Source_Device_Inaccessible, 34,566:Element_Import_Low_User_Link_Bandwidth, 34,567:Element_Import_Concurrent_SanCopy_Session_Destinations, 34,568:Element_Import_Error_Communicating_With_SanpView, 34,569:Element_Import_Error_Communicating_With_SanpView_1, 34,570:Element_Import_Session_Inconsistent_State, 34,571:Element_Import_Destination_Inconsistent_State, 34,572:Element_Import_Auto_Recovery_Resume_Failed, 34,573:Element_Import_All_Paths_failure, 34,574:Element_Import_Access_Denied_To_Device, 34,575:Element_Import_Not_Enough_Memory, 34,576:Element_Import_Source_Device_Failure, 34,577:Element_Import_Destination_Device_Failure, 34,578:Element_Import_Destination_Device_Not_found, 34,579:Element_Import_Target_LU_Not_Initialized, 34,580:Element_Import_Command_TimedOut, 34,581:Element_Import_Verifying_Frontend_TimedOut, 34,582:Element_Import_Verifying_Frontend_TimedOut_Another_Operation, 34,583:Element_Import_Source_Connectivity_TimedOut, 34,584:Element_Import_Destination_Connectivity_TimedOut, 34,585:Element_Import_RLP_IO_Failure, 34,586:Element_Import_Total_Sessions_Limit_Reached, 34,587:Element_Import_Incremental_Sessions_Limit_Reached, 34,588:Element_Import_Incremental_Sessions_Total_Number_Reached, 34,589:Element_Import_Limit_Of_Total_Sessions_Reached, 34,590:Element_Import_Limit_Of_Total_Incremental_Sessions_Reached, 34,591:Element_Import_Copy_Command_Queued, 34,592:Element_Import_Session_Failed_On_Source_Or_Destination, 34,593:Element_Import_Device_Cannot_Be_Located, 34,594:Element_Import_No_Unused_Rlp_Luns, 34,595:Element_Import_Reserved_Lun_Not_Support_Incremental_Sessions, 34,596:Element_Import_Snapview_Reserved_Lun_Not_Enough_Space, 34,597:Element_Import_Too_Many_Snapshots_On_Source_Lu, 34,598:Element_Import_Cannot_Open_Reserved_Lun, 34,599:Element_Import_Cannot_Get_Reserved_Lun_info, 34,600:Element_Import_No_Space_On_Rlp, 34,601:Element_Import_Rlp_Maximum_Devices, 34,602:Element_Import_Session_With_No_Cache_Devices, 34,603:Element_Import_Session_Failed_Write_To_Target_Device_Insufficient_Storage, 34,604:Element_Import_Session_Device_Not_Ready, 34,605:Element_Import_Session_Source_Device_Unavailable, 34,606:Element_Import_Session_Source_In_Import_Session
-    enum: 
-      -0
-      -7
-      -32768
-      -32769
-      -32770
-      -32771
-      -32772
-      -32773
-      -32774
-      -32776
-      -32777
-      -32779
-      -32780
-      -32781
-      -32782
-      -32783
-      -33532
-      -33024
-      -33025
-      -33026
-      -33027
-      -33028
-      -33029
-      -33030
-      -33031
-      -33032
-      -33033
-      -33280
-      -33281
-      -33282
-      -33283
-      -33284
-      -33285
-      -33536
-      -33537
-      -33538
-      -33539
-      -33540
-      -33541
-      -33542
-      -33543
-      -33544
-      -33547
-      -34048
-      -34049
-      -34050
-      -34051
-      -34052
-      -34304
-      -34305
-      -34560
-      -34561
-      -34562
-      -34563
-      -34564
-      -34565
-      -34566
-      -34567
-      -34568
-      -34569
-      -34570
-      -34571
-      -34572
-      -34573
-      -34574
-      -34575
-      -34576
-      -34577
-      -34578
-      -34579
-      -34580
-      -34581
-      -34582
-      -34583
-      -34584
-      -34585
-      -34586
-      -34587
-      -34588
-      -34589
-      -34590
-      -34591
-      -34592
-      -34593
-      -34594
-      -34595
-      -34596
-      -34597
-      -34598
-      -34599
-      -34600
-      -34601
-      -34602
-      -34603
-      -34604
-      -34605
-      -34606
+    enum: [0,7,32768,32769,32770,32771,32772,32773,32774,32776,32777,32779,32780,32781,32782,32783,33532,33024,33025,33026,33027,33028,33029,33030,33031,33032,33033,33280,33281,33282,33283,33284,33285,33536,33537,33538,33539,33540,33541,33542,33543,33544,33547,34048,34049,34050,34051,34052,34304,34305,34560,34561,34562,34563,34564,34565,34566,34567,34568,34569,34570,34571,34572,34573,34574,34575,34576,34577,34578,34579,34580,34581,34582,34583,34584,34585,34586,34587,34588,34589,34590,34591,34592,34593,34594,34595,34596,34597,34598,34599,34600,34601,34602,34603,34604,34605,34606]
   ImportStageEnum:
     type: integer
     description: 0:Initial, 1:Incremental, 2:Final
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   ImportStateEnum:
     type: integer
     description: 0:Unknown, 50,000:Initialized, 50,001:Initial_Copy, 50,002:Ready_to_Cutover, 50,003:Paused, 50,004:Cutting_Over, 50,005:Incremental_Copy, 50,006:Ready_to_Commit, 50,007:Committing, 50,008:Completed, 50,009:Cancelling, 50,010:Cancelled, 50,011:Pending, 50,012:Syncing, 50,013:Error
-    enum: 
-      -0
-      -50000
-      -50001
-      -50002
-      -50003
-      -50004
-      -50005
-      -50006
-      -50007
-      -50008
-      -50009
-      -50010
-      -50011
-      -50012
-      -50013
+    enum: [0,50000,50001,50002,50003,50004,50005,50006,50007,50008,50009,50010,50011,50012,50013]
   ImportTypeEnum:
     type: integer
     description: 0:block, 1:nas
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   ImportUnixDirectoryServiceEnum:
     type: integer
     description: 0:Local, 1:NIS, 2:LDAP, 3:LocalThenNis, 4:LocalThenLdap, 5:None, 6:DirectMatch
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
+    enum: [0,1,2,3,4,5,6]
   InterfaceConfigModeEnum:
     type: integer
     description: 0:Disabled, 1:Static, 2:Auto
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   IOLimitPolicyStateEnum:
     type: integer
     description: 1:Global_Paused, 2:Paused, 3:Active
-    enum: 
-      -1
-      -2
-      -3
+    enum: [1,2,3]
   IOLimitPolicyTypeEnum:
     type: integer
     description: 1:Absolute, 2:Density_Based
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   IoModuleStatusEnum:
     type: integer
     description: 0:Unknown, 2:OK, 32,768:Not_Symmetric, 32,769:Ready_For_Configuration, 33,024:Uninitialized, 33,025:Empty, 33,026:Missing, 33,027:Faulted, 33,028:Unsupported, 32,800:Not_Present, 32,801:PROM_Read_Error, 32,802:Incorrect_Module, 32,803:Unsupported_Module, 32,804:Powered_Off, 32,805:Power_Up_Failed, 32,806:POST_BIOS_Failed, 32,807:Unsupported_Not_Committed
-    enum: 
-      -0
-      -2
-      -32768
-      -32769
-      -33024
-      -33025
-      -33026
-      -33027
-      -33028
-      -32800
-      -32801
-      -32802
-      -32803
-      -32804
-      -32805
-      -32806
-      -32807
+    enum: [0,2,32768,32769,33024,33025,33026,33027,33028,32800,32801,32802,32803,32804,32805,32806,32807]
   IpInterfaceTypeEnum:
     type: integer
     description: 1:Mgmt, 2:ISCSI, 3:File, 4:Replication
-    enum: 
-      -1
-      -2
-      -3
-      -4
+    enum: [1,2,3,4]
   IpProtocolTypeEnum:
     type: integer
     description: 0:UDP, 1:TCP, 3:Vendor_Specific, 4:Other
-    enum: 
-      -0
-      -1
-      -3
-      -4
+    enum: [0,1,3,4]
   IpProtocolVersionEnum:
     type: integer
     description: 4:IPv4, 6:IPv6
-    enum: 
-      -4
-      -6
+    enum: [4,6]
   IPRecommendUsageEnum:
     type: integer
     description: 1:File, 2:ISCSI
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   ISCSIConnectionStateEnum:
     type: integer
     description: 0:Unknown, 1:Logged_In, 2:Reconnecting, 3:Free, 4:No_Target
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   JobStateEnum:
     type: integer
     description: 1:Queued, 2:Running, 3:Suspended, 4:Completed, 5:Failed, 6:Rolling_Back, 7:Completed_With_Problems
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
+    enum: [1,2,3,4,5,6,7]
   JobTaskStateEnum:
     type: integer
     description: 0:Not_Started, 1:Running, 2:Completed, 3:Failed, 5:Rolling_Back, 6:Completed_With_Problems, 7:Suspended
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -5
-      -6
-      -7
+    enum: [0,1,2,3,5,6,7]
   KdcTypeEnum:
     type: integer
     description: 0:Custom, 1:Unix, 2:Windows
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   KeyManagerBackupKeysStatusEnum:
     type: integer
     description: 65,535:Invalid, 0:No_Retrieval_Required, 16:Retrieval_Required, 32:Retrieval_In_Progress, 64:Retrieval_Completed, 128:Keystore_Inaccessible
-    enum: 
-      -65535
-      -0
-      -16
-      -32
-      -64
-      -128
+    enum: [65535,0,16,32,64,128]
   KmipServerStatusEnum:
     type: integer
     description: 0:Down, 1:Up, 2:Unknown
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   KmipStatusEnum:
     type: integer
     description: 0:Disabled, 1:Enabled, 255:Unsupported, 65,535:Unknown
-    enum: 
-      -0
-      -1
-      -255
-      -65535
+    enum: [0,1,255,65535]
   LDAPProtocolEnum:
     type: integer
     description: 0:ldap, 1:ldaps, 2:unknown
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   LicenseProductLineEnum:
     type: integer
     description: 0:Unknown, 1:EUVSA, 3:EU
-    enum: 
-      -0
-      -1
-      -3
+    enum: [0,1,3]
   LicenseUnitOfMeasurementEnum:
     type: integer
     description: 0:Unknown, 1:CA, 2:CB, 3:CC, 4:IC
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   LocaleEnum:
     type: integer
     description: 0:en_US, 1:es_AR, 2:de_DE, 3:fr_FR, 5:ja_JP, 6:ko_KR, 7:pt_BR, 8:ru_RU, 9:zh_CN
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -5
-      -6
-      -7
-      -8
-      -9
+    enum: [0,1,2,3,5,6,7,8,9]
   LUNTypeEnum:
     type: integer
     description: 1:GenericStorage, 2:Standalone, 3:VmWareISCSI
-    enum: 
-      -1
-      -2
-      -3
+    enum: [1,2,3]
   MetricTypeEnum:
     type: integer
     description: 2:counter32, 3:counter64, 4:rate, 5:fact, 6:text, 7:virtualcounter32, 8:virtualcounter64
-    enum: 
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
+    enum: [2,3,4,5,6,7,8]
   MetricUnitEnum:
     type: integer
     description: 0:OTHER, 1:BYTES, 2:BYTES_PER_SECOND, 3:PERCENTAGE, 4:COUNT, 5:MILLISECONDS, 6:IOS, 7:IOS_PER_SECOND, 8:PACKETS_PER_SECOND, 9:MICROSECONDS, 10:KILOBYTES, 11:KILOBYTES_PER_SECOND, 12:MEGABYTES, 13:COUNT_PER_SECOND
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
   MirrorConditionEnum:
     type: integer
     description: 0:Unknown, 1:Master, 2:Normal, 3:Admin_Fracture, 4:Sys_Fracture, 5:Synch_Queue, 6:Syncing, 7:Waiting_On_Admin
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
+    enum: [0,1,2,3,4,5,6,7]
   MirrorStateEnum:
     type: integer
     description: 100:Unknown, 101:Out_Of_Sync, 102:In_Sync, 103:Consistent, 104:Syncing
-    enum: 
-      -100
-      -101
-      -102
-      -103
-      -104
+    enum: [100,101,102,103,104]
   MoveSessionPriorityEnum:
     type: integer
     description: 0:Idle, 1:Low, 2:Below_Normal, 3:Normal, 4:Above_Normal, 5:High
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
+    enum: [0,1,2,3,4,5]
   MoveSessionStateEnum:
     type: integer
     description: 0:Initializing, 1:Queued, 2:Running, 3:Failed, 4:Cancelling, 5:Cancelled, 6:Completed
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
+    enum: [0,1,2,3,4,5,6]
   MoveSessionStatusEnum:
     type: integer
     description: 0:OK, 1:PoolOffline, 2:PoolOutOfSpace, 3:InternalError
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   MoveSessionThrottleEnum:
     type: integer
     description: 0:Idle, 10:Low, 20:Below_Normal, 30:Normal, 40:Above_Normal, 50:High
-    enum: 
-      -0
-      -10
-      -20
-      -30
-      -40
-      -50
+    enum: [0,10,20,30,40,50]
   NasServerFileTypeEnum:
     type: integer
     description: 0:Unknown, 1:Ldap_Configuration, 2:Ldap_CA_Certificate, 3:Username_Mappings, 4:Virus_Checker_Configuration, 5:Users, 6:Groups, 7:Hosts, 8:Netgroups, 9:User_Mapping_Report, 10:Kerberos_Key_Table, 11:Homedir
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11]
   NasServerTypeEnum:
     type: integer
     description: 32:Type32, 64:Type64
-    enum: 
-      -32
-      -64
+    enum: [32,64]
   NasServerUnixDirectoryServiceEnum:
     type: integer
     description: 0:None, 1:Local, 2:NIS, 3:LDAP, 4:LocalThenNIS, 5:LocalThenLDAP
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
+    enum: [0,1,2,3,4,5]
   NFSAccessLevelEnum:
     type: integer
     description: 0:Read, 1:Write, 2:Root, 3:None
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   NFSShareDefaultAccessEnum:
     type: integer
     description: 0:NoAccess, 1:ReadOnly, 2:ReadWrite, 3:Root, 4:RoRoot
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   NFSShareRoleEnum:
     type: integer
     description: 0:Production, 1:Backup
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   NFSShareSecurityEnum:
     type: integer
     description: 0:Sys, 1:Kerberos, 2:KerberosWithIntegrity, 3:KerberosWithEncryption
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   NFSTypeEnum:
     type: integer
     description: 1:Nfs_Share, 2:Vmware_Nfs, 3:Nfs_Snapshot
-    enum: 
-      -1
-      -2
-      -3
+    enum: [1,2,3]
   NodeEnum:
     type: integer
     description: 0:SPA, 1:SPB, 2,989:Unknown
-    enum: 
-      -0
-      -1
-      -2989
+    enum: [0,1,2989]
   NotRecommendedReasonEnum:
     type: integer
     description: 1:None, 2:NotReadOnly, 3:AutoDeleteSet, 4:ExpirationTimeSet, 5:SystemSnap
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
+    enum: [1,2,3,4,5]
   PingStatusEnum:
     type: integer
     description: 0:Alive, 1:Unreachable
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   PolicyComplianceStatusEnum:
     type: integer
     description: 0:Compliant, 1:NonCompliant, 2:Unknown
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   PoolConsumerTypeEnum:
     type: integer
     description: 1:FileSystem, 2:ConsistencyGroup, 3:VMwareNFS, 4:VMwareVMFS, 8:LUN, 9:VVolDatastoreFS, 10:VVolDatastoreISCSI, 32,768:NASServer
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -8
-      -9
-      -10
-      -32768
+    enum: [1,2,3,4,8,9,10,32768]
   PoolDataRelocationTypeEnum:
     type: integer
     description: 1:Manual, 2:Scheduled, 3:Rebalance
-    enum: 
-      -1
-      -2
-      -3
+    enum: [1,2,3]
   PoolStateEnum:
     type: integer
     description: 1:Initializing, 2:Ready, 3:Faulted, 4:Offline, 5:Destroying
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
+    enum: [1,2,3,4,5]
   PoolTypeEnum:
     type: integer
     description: 0:Unknown, 5:NVMe_Extreme_Performance, 10:Extreme_Performance, 20:Performance, 30:Capacity, 100:Multi_Tier
-    enum: 
-      -0
-      -5
-      -10
-      -20
-      -30
-      -100
+    enum: [0,5,10,20,30,100]
   PoolUnitOpStatusEnum:
     type: integer
     description: 0:Unknown, 1:Other, 2:OK, 3:Degraded, 4:Stressed, 5:Predictive_Failure, 6:Error, 7:Non_Recoverable_Error, 8:Starting, 9:Stopping, 10:Stopped, 11:In_Service, 12:No_Contact, 13:Lost_Communication, 14:Aborted, 15:Dormant, 16:Supporting_Entity_in_Error, 17:Completed, 18:Power_Mode, 19:Online, 20:Available, 21:Offline, 22:Available_Connection_Invalid, 23:Available_Restore_Possible, 32,768:Inconsistency_Detected, 32,769:No_Backend_Object, 32,770:Under_Construction
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
-      -14
-      -15
-      -16
-      -17
-      -18
-      -19
-      -20
-      -21
-      -22
-      -23
-      -32768
-      -32769
-      -32770
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,32768,32769,32770]
   PoolUnitTypeEnum:
     type: integer
     description: 1:RAID_Group, 2:Virtual_Disk
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   PortRepCapabilityEnum:
     type: integer
     description: 0:Sync_Replication, 1:RecoverPoint
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   ProductTypeEnum:
     type: integer
     description: 0:VNXe, 1:VNX, 3:CX4, 4:vVNX
-    enum: 
-      -0
-      -1
-      -3
-      -4
+    enum: [0,1,3,4]
   ProxyProtocolEnum:
     type: integer
     description: 0:Http, 1:Socks
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   PublicKeyAlgoTypeEnum:
     type: integer
     description: 1:RSA, 2:DSA, 3:ECDSA, 99:Unknown
-    enum: 
-      -1
-      -2
-      -3
-      -99
+    enum: [1,2,3,99]
   QOSBurstDurationEnum:
     type: integer
     description: 0:one_minute, 1:three_minutes, 2:five_minutes
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   QOSLimitTypeEnum:
     type: integer
     description: 0:Density_Per_GB, 1:Absolute
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   QOSLimitUsageEnum:
     type: integer
     description: 0:Maximum_Rate, 1:Maximum_Bandwidth, 2:Both
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   QuotaPolicyEnum:
     type: integer
     description: 1:Blocks, 0:File_Size
-    enum: 
-      -1
-      -0
+    enum: [1,0]
   QuotaStateEnum:
     type: integer
     description: 0:OK, 1:Soft_Exceeded, 2:Soft_Exceeded_And_Expired, 3:Hard_Exceeded, 4:Unlimited
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   RaidGroupOpStatusEnum:
     type: integer
     description: 0:Unknown, 1:Other, 2:OK, 3:Degraded, 4:Stressed, 5:Predictive_Failure, 6:Error, 7:Non_Recoverable_Error, 8:Starting, 9:Stopping, 10:Stopped, 11:In_Service, 12:No_Contact, 13:Lost_Communication, 14:Aborted, 15:Dormant, 16:Supporting_Entity_in_Error, 17:Completed, 18:Power_Mode
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
-      -14
-      -15
-      -16
-      -17
-      -18
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
   RaidStripeWidthEnum:
     type: integer
     description: 0:BestFit, 2:_2, 4:_4, 5:_5, 6:_6, 8:_8, 9:_9, 10:_10, 12:_12, 13:_13, 14:_14, 16:_16
-    enum: 
-      -0
-      -2
-      -4
-      -5
-      -6
-      -8
-      -9
-      -10
-      -12
-      -13
-      -14
-      -16
+    enum: [0,2,4,5,6,8,9,10,12,13,14,16]
   RaidTypeEnum:
     type: integer
     description: 0:None, 1:RAID5, 2:RAID0, 3:RAID1, 4:RAID3, 7:RAID10, 10:RAID6, 12:Mixed, 48,879:Automatic
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -7
-      -10
-      -12
-      -48879
+    enum: [0,1,2,3,4,7,10,12,48879]
   RebootPrivilegeEnum:
     type: integer
     description: 0:No_Reboot_Allowed, 1:Reboot_Allowed, 2:DU_Allowed
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   RecallPolicyEnum:
     type: integer
     description: 0:Full, 1:PassThrough, 2:Partial, 3:None
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   RecallPolicyOnDeleteEnum:
     type: integer
     description: 0:Yes, 1:No, 2:Fail
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   RemoteObjectTypeEnum:
     type: integer
     description: 0:lun, 1:filesystem, 2:consistencyGroup, 3:nasServer
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   RemoteSyslogFacilityTypeEnum:
     type: integer
     description: 0:Kernel_Messages, 1:User_level_Messages, 5:Syslogd
-    enum: 
-      -0
-      -1
-      -5
+    enum: [0,1,5]
   RemoteSystemConnectionTypeEnum:
     type: integer
     description: 0:Sync, 1:Async, 2:Both
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   RemoteSystemTypeEnum:
     type: integer
     description: 0:VNXe, 1:VNX, 99:Unknown
-    enum: 
-      -0
-      -1
-      -99
+    enum: [0,1,99]
   ReplicationCapabilityEnum:
     type: integer
     description: 0:Sync, 1:Async, 2:Both, 3:None
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   ReplicationElementTypeEnum:
     type: integer
     description: 0:lun, 1:filesystem
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   ReplicationEndpointResourceTypeEnum:
     type: integer
     description: 1:filesystem, 2:consistencyGroup, 3:vmwarefs, 4:vmwareiscsi, 8:lun, 10:nasServer
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -8
-      -10
+    enum: [1,2,3,4,8,10]
   ReplicationFailbackForceDataLossChoiceEnum:
     type: integer
     description: 0:None, 1:Discard_Destination_Changes, 2:Discard_Source_Changes
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   ReplicationOpStatusEnum:
     type: integer
     description: 0:Unknown, 1:Other, 2:OK, 7:Non_Recoverable_Error, 13:Lost_Communication, 33,792:Failed_Over_with_Sync, 33,793:Failed_Over, 33,794:Manual_Syncing, 33,795:Paused, 33,796:Idle, 33,797:Auto_Sync_Configured, 33,803:Destination_Extend_Failed_Not_Syncing, 33,804:Destination_Extend_In_Progress, 33,805:Active, 33,806:Lost_Sync_Communication, 33,807:Destination_Pool_Out_Of_Space, 33,809:Syncing, 34,792:Failed_Over_with_Sync_Mixed, 34,793:Failed_Over_Mixed, 34,794:Manual_Syncing_Mixed, 34,795:Paused_Mixed, 34,796:Idle_Mixed, 34,797:Auto_Sync_Configured_Mixed, 34,798:Hibernated, 34,799:Zero_Bandwidth_Configured, 34,800:Source_VDM_Performance_Degraded
-    enum: 
-      -0
-      -1
-      -2
-      -7
-      -13
-      -33792
-      -33793
-      -33794
-      -33795
-      -33796
-      -33797
-      -33803
-      -33804
-      -33805
-      -33806
-      -33807
-      -33809
-      -34792
-      -34793
-      -34794
-      -34795
-      -34796
-      -34797
-      -34798
-      -34799
-      -34800
+    enum: [0,1,2,7,13,33792,33793,33794,33795,33796,33797,33803,33804,33805,33806,33807,33809,34792,34793,34794,34795,34796,34797,34798,34799,34800]
   ReplicationPolicyEnum:
     type: integer
     description: 0:Not_Replicated, 1:Replicated, 2:Overridden
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   ReplicationSessionNetworkStatusEnum:
     type: integer
     description: 0:Unknown, 1:Other, 2:OK, 5:Lost_Communication, 10:Lost_Sync_Communication, 18:Zero_Bandwidth_Configured
-    enum: 
-      -0
-      -1
-      -2
-      -5
-      -10
-      -18
+    enum: [0,1,2,5,10,18]
   ReplicationSessionReplicationRoleEnum:
     type: integer
     description: 0:Source, 1:Destination, 2:Loopback, 3:Local, 4:Unknown
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   ReplicationSessionStatusEnum:
     type: integer
     description: 0:Unknown, 1:Other, 2:OK, 3:Paused, 4:Fatal_Replication_Issue, 5:Lost_Communication, 6:Failed_Over, 7:Failed_Over_With_Sync, 8:Destination_Extend_Not_Syncing, 9:Destination_Extend_In_Progress, 10:Lost_Sync_Communication, 11:Destination_Pool_Out_Of_Space, 16:Hibernated
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -16
+    enum: [0,1,2,3,4,5,6,7,8,9,10,11,16]
   ReplicationSessionSyncStateEnum:
     type: integer
     description: 0:Manual_Syncing, 1:Auto_Syncing, 2:Idle, 100:Unknown, 101:Out_Of_Sync, 102:In_Sync, 103:Consistent, 104:Syncing, 105:Inconsistent
-    enum: 
-      -0
-      -1
-      -2
-      -100
-      -101
-      -102
-      -103
-      -104
-      -105
+    enum: [0,1,2,100,101,102,103,104,105]
   ReplicationTypeEnum:
     type: integer
     description: 0:None, 1:Local, 2:Remote, 3:Mixed
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   ReplicaTypeEnum:
     type: integer
     description: 0:Base, 1:PreSnapshot, 2:Snapshot, 3:FastClone
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   ResourcePoolFullPolicyEnum:
     type: integer
     description: 0:Delete_All_Snaps, 1:Fail_Writes
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   RoleMappingTypeEnum:
     type: integer
     description: 0:ldapgroup, 1:ldapuser, 2:localuser, 3:unknown
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   SasStatusEnum:
     type: integer
     description: 0:Unknown, 2:OK, 3:Degraded, 32,784:Link_Up, 32,785:Link_Down, 32,816:Maximum_Enclosures_Exceeded, 33,024:Uninitialized, 33,025:Empty, 33,026:Missing, 33,027:Faulted, 33,028:Unavailable, 33,029:Disabled, 33,280:SFP_Not_Present, 33,281:Module_Not_Present, 33,282:Port_Not_Present, 33,283:Missing_SFP, 33,284:Missing_Module, 33,285:Incorrect_SFP_Type, 33,286:Incorrect_Module, 33,287:SFP_Read_Error, 33,288:Unsupported_SFP, 33,289:Module_Read_Error, 33,290:Exceeded_Maximum_Limits, 33,291:Module_Powered_Off, 33,292:Unsupported_Module, 33,293:Database_Read_Error, 33,294:Faulted_SFP, 33,295:Hardware_Fault, 33,296:Disabled_User_Initiated, 33,297:Disabled_Encryption_Required, 33,298:Disabled_Hardware_Fault
-    enum: 
-      -0
-      -2
-      -3
-      -32784
-      -32785
-      -32816
-      -33024
-      -33025
-      -33026
-      -33027
-      -33028
-      -33029
-      -33280
-      -33281
-      -33282
-      -33283
-      -33284
-      -33285
-      -33286
-      -33287
-      -33288
-      -33289
-      -33290
-      -33291
-      -33292
-      -33293
-      -33294
-      -33295
-      -33296
-      -33297
-      -33298
+    enum: [0,2,3,32784,32785,32816,33024,33025,33026,33027,33028,33029,33280,33281,33282,33283,33284,33285,33286,33287,33288,33289,33290,33291,33292,33293,33294,33295,33296,33297,33298]
   ScheduleTimezoneCandidatesEnum:
     type: integer
     description: 10:UTCm1200CoordinatedUniversalTime, 20:UTCm1100MidwayNiuePagoPagoSamoa, 30:UTCm1100CoordinatedUniversalTime, 40:UTCm1000AdakAtka, 50:UTCm1000HonoluluJohnstonRarotongaTahiti, 60:UTCm1000CoordinatedUniversalTime, 70:UTCm0930Marquesas, 80:UTCm0930CoordinatedUniversalTime, 90:UTCm0900AlaskaJuneauMetlakatlaSitka, 100:UTCm0900Gambier, 110:UTCm0900CoordinatedUniversalTime, 120:UTCm0800BajaNorteEnsenadaLosAngeles, 130:UTCm0800PacificTimeUSCanada, 140:UTCm0800Pitcairn, 150:UTCm0800CoordinatedUniversalTime, 160:UTCm0700BajaSurChihuahuaMazatlan, 170:UTCm0700BoiseCambridgeBayYellowknife, 180:UTCm0700MountainTimeUSCanada, 190:UTCm0700CrestonDawsonCreekHermosilloPhoenix, 200:UTCm0700CoordinatedUniversalTime, 210:UTCm0600BahiaBanderasMeridaMexicoCityMonterrey, 220:UTCm0600CentralTimeUSCanada, 230:UTCm0600ChicagoMatamorosMenominee, 240:UTCm0600EasterIsland, 250:UTCm0600ManaguaSaskatchewanTegucigalpa, 260:UTCm0600CoordinatedUniversalTime, 270:UTCm0500AtikokanBogotaLimaRioBranco, 280:UTCm0500DetroitIqaluitMarengoNewYorkVincennes, 290:UTCm0500EasternTimeUSCanada, 300:UTCm0500Havana, 310:UTCm0500CoordinatedUniversalTime, 320:UTCm0400Asuncion, 330:UTCm0400AtlanticBermudaHalifaxMoncton, 340:UTCm0400CampoGrandeCuiaba, 350:UTCm0400Caracas, 360:UTCm0400ContinentalPalmerSantiago, 370:UTCm0400LaPazManausSantoDomingoWest, 380:UTCm0400CoordinatedUniversalTime, 390:UTCm0330NewfoundlandStJohns, 400:UTCm0330CoordinatedUniversalTime, 410:UTCm0300AraguainaBahiaBuenosAiresMontevideo, 420:UTCm0300EastSaoPaulo, 430:UTCm0300Godthab, 440:UTCm0300Miquelon, 450:UTCm0300CoordinatedUniversalTime, 460:UTCm0200DeNoronhaNoronhaSouthGeorgia, 470:UTCm0200CoordinatedUniversalTime, 480:UTCm0100AzoresScoresbysund, 490:UTCm0100CapeVerde, 500:UTCm0100CoordinatedUniversalTime, 510:UTCp0000CasablancaElAaiun, 520:UTCp0000DublinLisbonLondon, 530:UTCp0000LomeMonroviaReykjavikSaoTome, 540:UTCp0000Troll, 550:UTCp0000CoordinatedUniversalTime, 560:UTCp0100AlgiersLagosNdjamenaNiameyTunis, 570:UTCp0100AmsterdamBerlinRomeStockholmVienna, 580:UTCp0100BelgradeBratislavaBudapestLjubljanaPrague, 590:UTCp0100BrusselsCopenhagenMadridParis, 600:UTCp0100SarajevoSkopjeWarsawZagreb, 610:UTCp0100CoordinatedUniversalTime, 620:UTCp0200Amman, 630:UTCp0200AthensBucharest, 640:UTCp0200Beirut, 650:UTCp0200ChisinauTiraspol, 660:UTCp0200Damascus, 670:UTCp0200GazaHebron, 680:UTCp0200HarareKaliningradTripoliWindhoek, 690:UTCp0200HelsinkiKievRigaSofiaTallinnVilnius, 700:UTCp0200JerusalemTelAviv, 710:UTCp0200CoordinatedUniversalTime, 720:UTCp0300AsmeraJubaKampalaMinskMoscow, 730:UTCp0300BaghdadIstanbulKuwaitRiyadh, 740:UTCp0300CoordinatedUniversalTime, 750:UTCp0330Tehran, 760:UTCp0400BakuMuscatSamaraTbilisiYerevan, 770:UTCp0400CoordinatedUniversalTime, 780:UTCp0430Kabul, 790:UTCp0500AshgabatKarachiQyzylordaTashkent, 800:UTCp0500CoordinatedUniversalTime, 810:UTCp0530ChennaiKolkataMumbai, 820:UTCp0530CoordinatedUniversalTime, 830:UTCp0545Katmandu, 840:UTCp0545CoordinatedUniversalTime, 850:UTCp0600AlmatyBishkekChagosDhakaOmsk, 860:UTCp0600CoordinatedUniversalTime, 870:UTCp0630CocosRangoon, 880:UTCp0630CoordinatedUniversalTime, 890:UTCp0700BangkokHoChiMinhJakartaNovokuznetsk, 900:UTCp0700Hovd, 910:UTCp0700CoordinatedUniversalTime, 920:UTCp0800BeijingChongqingHongKongUrumqi, 930:UTCp0800BruneiIrkutskKualaLumpurManila, 940:UTCp0800PerthSingaporeTaipeiUlaanbaatar, 950:UTCp0800CoordinatedUniversalTime, 960:UTCp0830Pyongyang, 970:UTCp0845Eucla, 980:UTCp0845CoordinatedUniversalTime, 990:UTCp0900ChitaSeoulTokyoYakutsk, 1,000:UTCp0900CoordinatedUniversalTime, 1,010:UTCp0930AdelaideBrokenHillYancowinna, 1,020:UTCp0930Darwin, 1,030:UTCp0930CoordinatedUniversalTime, 1,040:UTCp1000BrisbaneGuamPortMoresbySaipanVladivostok, 1,050:UTCp1000CanberraHobartMelbourneSydney, 1,060:UTCp1000CoordinatedUniversalTime, 1,070:UTCp1030LHILordHowe, 1,080:UTCp1030CoordinatedUniversalTime, 1,090:UTCp1100MagadanNorfolkSakhalinSolomon, 1,100:UTCp1100CoordinatedUniversalTime, 1,110:UTCp1200AnadyrFunafutiKamchatka, 1,120:UTCp1200AucklandMcMurdoSouthPole, 1,130:UTCp1200Fiji, 1,140:UTCp1200CoordinatedUniversalTime, 1,150:UTCp1245Chatham, 1,160:UTCp1245CoordinatedUniversalTime, 1,170:UTCp1300Apia, 1,180:UTCp1300EnderburyFakaofoTongatapu, 1,190:UTCp1300CoordinatedUniversalTime, 1,200:UTCp1400Kiritimati, 1,210:UTCp1400CoordinatedUniversalTime, 1,220:UTCLegacy
-    enum: 
-      -10
-      -20
-      -30
-      -40
-      -50
-      -60
-      -70
-      -80
-      -90
-      -100
-      -110
-      -120
-      -130
-      -140
-      -150
-      -160
-      -170
-      -180
-      -190
-      -200
-      -210
-      -220
-      -230
-      -240
-      -250
-      -260
-      -270
-      -280
-      -290
-      -300
-      -310
-      -320
-      -330
-      -340
-      -350
-      -360
-      -370
-      -380
-      -390
-      -400
-      -410
-      -420
-      -430
-      -440
-      -450
-      -460
-      -470
-      -480
-      -490
-      -500
-      -510
-      -520
-      -530
-      -540
-      -550
-      -560
-      -570
-      -580
-      -590
-      -600
-      -610
-      -620
-      -630
-      -640
-      -650
-      -660
-      -670
-      -680
-      -690
-      -700
-      -710
-      -720
-      -730
-      -740
-      -750
-      -760
-      -770
-      -780
-      -790
-      -800
-      -810
-      -820
-      -830
-      -840
-      -850
-      -860
-      -870
-      -880
-      -890
-      -900
-      -910
-      -920
-      -930
-      -940
-      -950
-      -960
-      -970
-      -980
-      -990
-      -1000
-      -1010
-      -1020
-      -1030
-      -1040
-      -1050
-      -1060
-      -1070
-      -1080
-      -1090
-      -1100
-      -1110
-      -1120
-      -1130
-      -1140
-      -1150
-      -1160
-      -1170
-      -1180
-      -1190
-      -1200
-      -1210
-      -1220
+    enum: [10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640,650,660,670,680,690,700,710,720,730,740,750,760,770,780,790,800,810,820,830,840,850,860,870,880,890,900,910,920,930,940,950,960,970,980,990,1000,1010,1020,1030,1040,1050,1060,1070,1080,1090,1100,1110,1120,1130,1140,1150,1160,1170,1180,1190,1200,1210,1220]
   ScheduleTypeEnum:
     type: integer
     description: 0:N_HOURS_AT_MM, 1:DAY_AT_HHMM, 2:N_DAYS_AT_HHMM, 3:SELDAYS_AT_HHMM, 4:NTH_DAYOFMONTH_AT_HHMM, 5:UNSUPPORTED
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
+    enum: [0,1,2,3,4,5]
   ScheduleVersionEnum:
     type: integer
     description: 1:Legacy, 2:Simple
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   SchemeTypeEnum:
     type: integer
     description: 0:Unknown, 1:RFC2307, 2:Microsoft
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   SecuritySettingsTLSModeEnum:
     type: integer
     description: 0:tls_1_0, 1:tls_1_1, 2:tls_1_2
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   ServiceContractStatusEnum:
     type: integer
     description: 0:Active, 1:About_To_Expire, 2:Expired, 3:Terminated, 4:Pending
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   ServiceLevelEnum:
     type: integer
     description: 0:Basic, 1:Bronze, 2:Silver, 3:Gold, 4:Platinum
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   ServiceTypeEnum:
     type: integer
     description: 2:VASA_HTTP, 3:Mgmt_LDAP, 4:Mgmt_KMIP, 99:Unknown
-    enum: 
-      -2
-      -3
-      -4
-      -99
+    enum: [2,3,4,99]
   SeverityEnum:
     type: integer
     description: 8:OK, 7:DEBUG, 6:INFO, 5:NOTICE, 4:WARNING, 3:ERROR, 2:CRITICAL, 1:ALERT, 0:EMERGENCY
-    enum: 
-      -8
-      -7
-      -6
-      -5
-      -4
-      -3
-      -2
-      -1
-      -0
+    enum: [8,7,6,5,4,3,2,1,0]
   SFPProtocolValuesEnum:
     type: integer
     description: 0:Unknown, 1:FIBRE_CHANNEL, 2:Ethernet, 3:SAS
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   SFPSpeedValuesEnum:
     type: integer
     description: 0:Auto, 10:_10Mbps, 100:_100Mbps, 1,000:_1Gbps, 1,500:_1500Mbps, 2,000:_2Gbps, 3,000:_3Gbps, 4,000:_4Gbps, 6,000:_6Gbps, 8,000:_8Gbps, 10,000:_10Gbps, 12,000:_12Gbps, 16,000:_16Gbps, 25,000:_25Gbps, 32,000:_32Gbps, 40,000:_40Gbps, 100,000:_100Gbps, 1,000,000:_1Tbps
-    enum: 
-      -0
-      -10
-      -100
-      -1000
-      -1500
-      -2000
-      -3000
-      -4000
-      -6000
-      -8000
-      -10000
-      -12000
-      -16000
-      -25000
-      -32000
-      -40000
-      -100000
-      -1000000
+    enum: [0,10,100,1000,1500,2000,3000,4000,6000,8000,10000,12000,16000,25000,32000,40000,100000,1000000]
   SFPSupportedModeEnum:
     type: integer
     description: 0:Unknown, 1:Single_Mode, 2:Multi_Mode
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   SignatureAlgoTypeEnum:
     type: integer
     description: 1:DSA_With_SHA, 2:DSA_With_SHA1, 3:MD5_With_RSA_Encryption, 4:RIPEMD160_With_RSA, 5:SHA_With_RSA_Encryption, 6:SHA1_With_RSA_Encryption, 7:SHA224_With_RSA_Encryption, 8:SHA256_With_RSA_Encryption, 9:SHA384_With_RSA_Encryption, 10:SHA512_With_RSA_Encryption, 11:ECDSA_With_SHA1, 12:ECDSA_With_SHA224, 13:ECDSA_With_SHA256, 14:ECDSA_With_SHA384, 15:ECDSA_With_SHA512, 99:Unknown
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
-      -14
-      -15
-      -99
+    enum: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,99]
   SmtpTypeEnum:
     type: integer
     description: 0:Default, 1:PhoneHome
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   SnapAccessLevelEnum:
     type: integer
     description: 0:ReadOnly, 1:ReadWrite, 2:ReadOnlyPartial, 3:ReadWritePartial, 4:Mixed
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   SnapCreatorTypeEnum:
     type: integer
     description: 0:None, 1:Scheduled, 2:User_Custom, 3:User_Default, 4:External_VSS, 5:External_NDMP, 6:External_Restore, 8:External_Replication_Manager, 9:Replication, 10:File_Dedupe, 11:Snap_CLI, 12:AppSync
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -8
-      -9
-      -10
-      -11
-      -12
+    enum: [0,1,2,3,4,5,6,8,9,10,11,12]
   SnapReplicationStatusEnum:
     type: integer
     description: 0:Not_Marked_For_Replication, 1:Marked_For_Replication, 2:Replicated_On_Destination, 3:Failed_To_Replicate, 4:In_Progress
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   SnapStateEnum:
     type: integer
     description: 2:Ready, 3:Faulted, 6:Offline, 7:Invalid, 8:Initializing, 9:Destroying
-    enum: 
-      -2
-      -3
-      -6
-      -7
-      -8
-      -9
+    enum: [2,3,6,7,8,9]
   SNMPAuthProtocolEnum:
     type: integer
     description: 0:None, 1:MD5, 2:SHA
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   SNMPPrivacyProtocolEnum:
     type: integer
     description: 0:None, 1:AES, 2:DES
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   SNMPVersionEnum:
     type: integer
     description: 1:v1, 2:v2c, 3:v3
-    enum: 
-      -1
-      -2
-      -3
+    enum: [1,2,3]
   SpaceEfficiencyEnum:
     type: integer
     description: 0:Thick, 1:Thin
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   SpeedValuesEnum:
     type: integer
     description: 3:_3Gbps, 6:_6Gbps, 12:_12Gbps
-    enum: 
-      -3
-      -6
-      -12
+    enum: [3,6,12]
   SPModelNameEnum:
     type: integer
     description: 1:SP300, 2:SP400, 3:SP500, 4:SP600, 5:SP350, 6:SP450, 7:SP550, 8:SP650, 9:VSA2Core, 10:VSA12Core, 11:SP380, 12:SP480, 13:SP680, 14:SP880
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -10
-      -11
-      -12
-      -13
-      -14
+    enum: [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
   SsdTypeEnum:
     type: integer
     description: 0:Unknown, 1:Sata, 2:Nvme
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   SSLMethodEnum:
     type: integer
     description: 0:None, 1:StartTLS, 2:SSL_TLS
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   SSLStrengthEnum:
     type: integer
     description: 0:Unknown, 1:Low, 2:Medium, 3:High
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   StoragePoolTypeEnum:
     type: integer
     description: 1:Traditional, 2:Dynamic
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   StorageProcessorEnum:
     type: integer
     description: 0:SPA, 1:SPB
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   StorageResourceTypeEnum:
     type: integer
     description: 1:filesystem, 2:consistencyGroup, 3:vmwarefs, 4:vmwareiscsi, 8:lun, 9:VVolDatastoreFS, 10:VVolDatastoreISCSI
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -8
-      -9
-      -10
+    enum: [1,2,3,4,8,9,10]
   SupportCredentialStatusEnum:
     type: integer
     description: 0:Not_Set, 1:Unvalidated, 2:Valid, 3:Invalid
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   SvcCRUTypeEnum:
     type: integer
     description: 0:SLIC, 1:SSD
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   SvcScopeEnum:
     type: integer
     description: 0:system, 1:SPA, 2:SPB
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   SvcStorageProcessorStateEnum:
     type: integer
     description: 0:Normal, 1:Service, 2:Hold_In_Reset, 3:Rebooting
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   SyncSnapReplicationStatusEnum:
     type: integer
     description: 0:Not_Marked_For_Replication, 1:Replicated, 2:Failed_To_Replicate
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   ThinCloneOperationEnum:
     type: integer
     description: 1:Create, 2:Refresh
-    enum: 
-      -1
-      -2
+    enum: [1,2]
   ThinStatusEnum:
     type: integer
     description: 0:False, 1:True, 65,535:Mixed
-    enum: 
-      -0
-      -1
-      -65535
+    enum: [0,1,65535]
   ThumbprintAlgoTypeEnum:
     type: integer
     description: 1:SHA, 2:SHA1, 3:SHA224, 4:SHA256, 5:SHA384, 6:SHA512, 7:MD5, 8:RIPEMD160, 9:DSS1, 99:Unknown
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
-      -99
+    enum: [1,2,3,4,5,6,7,8,9,99]
   TieringPolicyEnum:
     type: integer
     description: 0:Autotier_High, 1:Autotier, 2:Highest, 3:Lowest, 4:No_Data_Movement, 65,535:Mixed
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -65535
+    enum: [0,1,2,3,4,65535]
   TierTypeEnum:
     type: integer
     description: 0:None, 5:NVMe_Extreme_Performance, 10:Extreme_Performance, 20:Performance, 30:Capacity
-    enum: 
-      -0
-      -5
-      -10
-      -20
-      -30
+    enum: [0,5,10,20,30]
   TsCloudProviderOpStatusEnum:
     type: integer
     description: 0:Unknown, 2:OK
-    enum: 
-      -0
-      -2
+    enum: [0,2]
   UFS64TypeEnum:
     type: integer
     description: 0:UFS64_Transactional, 1:UFS64_Traditional
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   UnbindContextEnum:
     type: integer
     description: 0:Normal, 1:RebindStart, 2:RebindEnd
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   UncPortStatusEnum:
     type: integer
     description: 0:Unknown, 2:OK, 3:Degraded, 33,024:Uninitialized, 33,025:Empty, 33,026:Missing, 33,027:Faulted, 33,028:Unavailable, 33,029:Disabled, 33,280:SFP_Not_Present, 33,281:Module_Not_Present, 33,282:Port_Not_Present, 33,283:Missing_SFP, 33,284:Missing_Module, 33,285:Incorrect_SFP_Type, 33,286:Incorrect_Module, 33,287:SFP_Read_Error, 33,288:Unsupported_SFP, 33,289:Module_Read_Error, 33,290:Exceeded_Maximum_Limits, 33,291:Module_Powered_Off, 33,292:Unsupported_Module, 33,293:Database_Read_Error, 33,294:Faulted_SFP, 33,295:Hardware_Fault, 33,296:Disabled_User_Initiated, 33,297:Disabled_Encryption_Required, 33,298:Disabled_Hardware_Fault
-    enum: 
-      -0
-      -2
-      -3
-      -33024
-      -33025
-      -33026
-      -33027
-      -33028
-      -33029
-      -33280
-      -33281
-      -33282
-      -33283
-      -33284
-      -33285
-      -33286
-      -33287
-      -33288
-      -33289
-      -33290
-      -33291
-      -33292
-      -33293
-      -33294
-      -33295
-      -33296
-      -33297
-      -33298
+    enum: [0,2,3,33024,33025,33026,33027,33028,33029,33280,33281,33282,33283,33284,33285,33286,33287,33288,33289,33290,33291,33292,33293,33294,33295,33296,33297,33298]
   UnitEnum:
     type: integer
     description: 1:Bytes, 2:BytesPerSecond, 3:Percentage, 4:Count, 5:Milliseconds, 6:IOs, 7:IOsPerSecond
-    enum: 
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
+    enum: [1,2,3,4,5,6,7]
   UpgradeSessionTypeEnum:
     type: integer
     description: 0:Upgrade, 1:Health_Check, 2:Storageprocessor_Upgrade, 3:Offline_Storageprocessor_Upgrade
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   UpgradeStatusEnum:
     type: integer
     description: 0:Upgrade_Not_Started, 1:Upgrade_In_Progress, 2:Upgrade_Completed, 3:Upgrade_Failed, 4:Upgrade_Failed_Lock, 5:Upgrade_Cancelled, 6:Upgrade_Paused, 7:Upgrade_Acknowledged, 8:Upgrade_Waiting_For_User, 9:Upgrade_Paused_Lock
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
-      -5
-      -6
-      -7
-      -8
-      -9
+    enum: [0,1,2,3,4,5,6,7,8,9]
   UpgradeTypeEnum:
     type: integer
     description: 0:Software, 1:Firmware, 2:LanguagePack
-    enum: 
-      -0
-      -1
-      -2
+    enum: [0,1,2]
   UsageHarvestStateEnum:
     type: integer
     description: 0:Idle, 1:Running, 2:Could_Not_Reach_LWM, 3:Paused_Could_Not_Reach_HWM, 4:Failed
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   UserRoleEnum:
     type: integer
     description: 0:Administrator, 1:Storage_Administrator, 2:Vm_Administrator, 3:Operator, 4:Security_Administrator
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   VasaProviderStateEnum:
     type: integer
     description: 0:Not_Registered, 1:Registered, 99:Not_Supported
-    enum: 
-      -0
-      -1
-      -99
+    enum: [0,1,99]
   VDMSupportedProtocolsEnum:
     type: integer
     description: 0:NFS, 1:CIFS, 2:Multiprotocol, 3:CIFSAndNFS
-    enum: 
-      -0
-      -1
-      -2
-      -3
+    enum: [0,1,2,3]
   VMDiskTypeEnum:
     type: integer
     description: 0:Unknown, 1:VMFS_Thick, 2:VMFS_Thin, 3:RDM_Physical, 4:RDM_Virtual
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   VMPowerStateEnum:
     type: integer
     description: 0:Unknown, 1:Off, 2:On, 3:Suspended, 4:Paused
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -4
+    enum: [0,1,2,3,4]
   VmwarePETypeEnum:
     type: integer
     description: 0:NAS, 1:SCSI
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   VVolDatastoreTypeEnum:
     type: integer
     description: 0:iSCSI, 1:NFS
-    enum: 
-      -0
-      -1
+    enum: [0,1]
   VVolTypeEnum:
     type: integer
     description: 0:Config, 1:Data, 2:Swap, 3:Memory, 99:Other
-    enum: 
-      -0
-      -1
-      -2
-      -3
-      -99
+    enum: [0,1,2,3,99]
 parameters:
   X-EMC-REST-CLIENT:
     name: X-EMC-REST-CLIENT
