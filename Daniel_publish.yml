@@ -59689,6 +59689,8 @@ If this value is not null then call home suppression is enabled, otherwise call 
 parameters:
   X-EMC-REST-CLIENT:
     name: X-EMC-REST-CLIENT
+    description: |
+      If true, it indicates the server will use the HTTP Basic access authentication mechanism to authenticate the login request.
     in: header
     type: boolean
     required: true
