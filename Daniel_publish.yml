@@ -59283,7 +59283,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Indicates whether the CIFS share access is granted or denied for a user. Use   <b>None</b> to remove the Access Control Entries (ACEs) for a Security   Identifier (SID) from the CIFS share.
+      Indicates whether the CIFS share access is granted or denied for a user. Use<br>  <b>None</b> to remove the Access Control Entries (ACEs) for a Security<br>  Identifier (SID) from the CIFS share.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -59340,7 +59340,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Allocation Unit possible sizes.   The AUSize is granularity at which LUN's space is allocated in the pool.
+      Allocation Unit possible sizes.<br>  The AUSize is granularity at which LUN's space is allocated in the pool.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -59640,7 +59640,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Reason codes - per RFC5280 - for certificate revocation.   NOTE: value 7 is not used
+      Reason codes - per RFC5280 - for certificate revocation.<br><br> NOTE: value 7 is not used
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -60444,7 +60444,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      File system locking policies.   These policy choices control whether the NFSv4 range locks must be honored.    Because NFSv3 is advisory by design, this policy allows specifying whether the NFSv4 locking feature behaves like NFSv3 (advisory mode) in order to be    backward compatible with applications expecting an advisory locking scheme.
+      File system locking policies.<br>  These policy choices control whether the NFSv4 range locks must be honored. <br>  Because NFSv3 is advisory by design, this policy allows specifying whether the NFSv4 locking feature behaves like NFSv3 (advisory mode) in order to be <br>  backward compatible with applications expecting an advisory locking scheme.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -60456,7 +60456,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      File system folder rename policies.   These policy choices control whether directory can be renamed from NFS or SMB clients if at least one file is opened in the directory or in one of its    child directories.
+      File system folder rename policies.<br>  These policy choices control whether directory can be renamed from NFS or SMB clients if at least one file is opened in the directory or in one of its <br>  child directories.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -60513,7 +60513,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      This enumeration gives the recommendation for how to import candidate hosts   based on the matching condition with the existing host.
+      This enumeration gives the recommendation for how to import candidate hosts<br>  based on the matching condition with the existing host.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -60528,7 +60528,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      This enumeration describes how the discovered candidate host matches the   existing host/hosts that is/are already known to the storage array.
+      This enumeration describes how the discovered candidate host matches the<br>  existing host/hosts that is/are already known to the storage array.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -60683,7 +60683,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Typical size of writes from the server or other computer using the file system or LUN to the storage system.   This setting is used to match the storage block size to the I/O of the primary application using the storage,  which can optimize performance. Choose one of the suggested applications if you are using one of them, or   check the setup guide or performance tuning information for the primary application, or stay with default 8K   size for general use.
+      Typical size of writes from the server or other computer using the file system or LUN to the storage system. <br> This setting is used to match the storage block size to the I/O of the primary application using the storage,<br> which can optimize performance. Choose one of the suggested applications if you are using one of them, or <br> check the setup guide or performance tuning information for the primary application, or stay with default 8K <br> size for general use.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61249,7 +61249,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Key Management Interoperability Protocol (KMIP) compliant  external key management feature status   @author zhangp
+      Key Management Interoperability Protocol (KMIP) compliant<br> external key management feature status <br> @author zhangp
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61263,7 +61263,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Indicates whether the LDAP protocol uses SSL for secure network communication.   SSL encrypts data over the network and provides message and server   authentication.
+      Indicates whether the LDAP protocol uses SSL for secure network communication.<br>  SSL encrypts data over the network and provides message and server<br>  authentication.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61507,7 +61507,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Define the Unix directory service used for looking up identity information for Unix  such as UIDs, GIDs, net groups, and so on.
+      Define the Unix directory service used for looking up identity information for Unix<br> such as UIDs, GIDs, net groups, and so on.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61644,7 +61644,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      PoolConsumerTypeEnum describes different types of object consuming space from   pool.
+      PoolConsumerTypeEnum describes different types of object consuming space from<br>  pool.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61706,7 +61706,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      This must be merge of operational statuses of all classes derived from poolUnit.  Some statuses are applicable for all poolUnit classes, the other are specific for certain subclasses.  @author Stanislav Samolenkov
+      This must be merge of operational statuses of all classes derived from poolUnit.<br> Some statuses are applicable for all poolUnit classes, the other are specific for certain subclasses.<br> @author Stanislav Samolenkov
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61872,7 +61872,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Now raidGroup does not have operational statuses. Enum exists for compatibility with base class poolUnit.  @author Stanislav Samolenkov
+      Now raidGroup does not have operational statuses. Enum exists for compatibility with base class poolUnit.<br> @author Stanislav Samolenkov
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61901,7 +61901,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      This enum provides a set of choices for RAID group stripe widths,   including parity or mirror disks.   <br>   For example, a stripe width of 5 for RAID5 specifies a 4+1 RAID5 configuration.
+      This enum provides a set of choices for RAID group stripe widths,<br>  including parity or mirror disks.<br>  <br><br>  For example, a stripe width of 5 for RAID5 specifies a 4+1 RAID5 configuration.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61942,7 +61942,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Reboot for a time change is required only if the time shift exceeds a   threshold of 1000 seconds.    If a reboot is required, and allowed, on a single SP system or a system   with only one SP operating, then clients will be unable to access data   during the reboot.     @engdocs   There is another OSLS value in the iteration (Not_Initialized=255) that is not   exposed to users but only expose to engineering.
+      Reboot for a time change is required only if the time shift exceeds a<br>  threshold of 1000 seconds.<br><br>  If a reboot is required, and allowed, on a single SP system or a system<br>  with only one SP operating, then clients will be unable to access data<br>  during the reboot.<br> <br>  @engdocs<br>  There is another OSLS value in the iteration (Not_Initialized=255) that is not<br>  exposed to users but only expose to engineering.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -61982,7 +61982,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Type of replicated or imported remote object available locally.  .
+      Type of replicated or imported remote object available locally.<br> .
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -62212,7 +62212,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Replication type for replication session   Valid values are: None, Local, Remote and Mixed
+      Replication type for replication session<br>  Valid values are: None, Local, Remote and Mixed
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -62252,7 +62252,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      The type of role mapping.  This may be localuser, ldapuser, or   ldapgroup.
+      The type of role mapping.  This may be localuser, ldapuser, or<br>  ldapgroup.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -62307,7 +62307,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Enumeration of possible schedule timezone candidates.    @engdocs It displays all timezone candidate strings.
+      Enumeration of possible schedule timezone candidates.<br><br>  @engdocs It displays all timezone candidate strings.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -62701,7 +62701,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Enumeration of possible snapshot states.    @engdocs It displays snap's state, ideally it should use snap health info,   but there is no health instance for snap at backend currently,   so we keep a backlog (US137796) for snap health instance in future.
+      Enumeration of possible snapshot states.<br><br>  @engdocs It displays snap's state, ideally it should use snap health info,<br>  but there is no health instance for snap at backend currently,<br>  so we keep a backlog (US137796) for snap health instance in future.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -62964,7 +62964,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Thin provisioning statuses for storage resource objects,    as defined by storageResource type.
+      Thin provisioning statuses for storage resource objects,<br>   as defined by storageResource type.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -62997,7 +62997,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Tiering policy choices for how the storage resource data will be distributed   among the tiers available in the pool.
+      Tiering policy choices for how the storage resource data will be distributed<br>  among the tiers available in the pool.
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
@@ -63013,7 +63013,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       - ~~~Enumerations
     type: integer
     description: |- 
-      Supported pool tier types.   <br/>   <br/>
+      Supported pool tier types.<br>  <br/><br>  <br/>
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
