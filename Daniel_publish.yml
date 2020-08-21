@@ -59358,9 +59358,9 @@ If this value is not null then call home suppression is enabled, otherwise call 
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
-      |   0   |   Anonymous   |   Anonymous authentication means no authentication occurs and the NAS server uses an anonymous       login to access the LDAP-based directory server.   |
-      |   1   |   Simple   |   Simple authentication means the NAS server must provide a bind distinguished name and password       to access the LDAP-based directory server.   |
-      |   2   |   Kerberos   |   Kerberos authentication means the NAS server uses a KDC to confirm the identity       when accessing the Active Directory.   |
+      |   0   |   Anonymous   |   Anonymous authentication means no authentication occurs and the NAS server uses an anonymous<br>      login to access the LDAP-based directory server.   |
+      |   1   |   Simple   |   Simple authentication means the NAS server must provide a bind distinguished name and password<br>      to access the LDAP-based directory server.   |
+      |   2   |   Kerberos   |   Kerberos authentication means the NAS server uses a KDC to confirm the identity<br>      when accessing the Active Directory.   |
     enum: [0,1,2]
   AuthTypeEnum:
     x-tags:
@@ -59428,7 +59428,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   1   |   High   |   High deduplication rate.   |
       |   2   |   Medium   |   Medium deduplication rate.   |
       |   3   |   Low   |   Low deduplication rate.   |
-      |   4   |   None   |   Deduplication rate is not initialized by the storage system.   Do not use this value in Modify requests: the storage system will respond with error.   |
+      |   4   |   None   |   Deduplication rate is not initialized by the storage system.<br>  Do not use this value in Modify requests: the storage system will respond with error.   |
     enum: [1,2,3,4]
   BlockDedupStateEnum:
     x-tags:
@@ -59769,7 +59769,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |  ----  | ----  | ---- |
       |   0   |   Enabled   |   Enabled allows both the creation of stub files and data migration through reads and writes.   |
       |   1   |   Disabled   |   Disabled means neither stub files nor data migration is possible   |
-      |   2   |   RecallOnly   |   Recallonly means the policy engine is not allowed to create stub files,  but the user is still able to trigger data migration by using a read or  write request from the secondary file system to the Unity.   |
+      |   2   |   RecallOnly   |   Recallonly means the policy engine is not allowed to create stub files,<br> but the user is still able to trigger data migration by using a read or<br> write request from the secondary file system to the Unity.   |
     enum: [0,1,2]
   DiskTechnologyEnum:
     x-tags:
@@ -59780,15 +59780,15 @@ If this value is not null then call home suppression is enabled, otherwise call 
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
-      |   1   |   SAS   |   The Serial attached SCSI (SAS) drive can be used for the   Performance storage tier.  This drive type provides high   performance and medium capacity storage for applications   that requires a balance between performance and capacity.   |
-      |   2   |   NL_SAS   |   The Near-line serial attached SCSI (NL-SAS) drive can be used   for the Capacity storage tier. This drive type provides   high capacity storage, but with lower overall performance   than regular SAS and Flash drives.   |
-      |   6   |   SAS_FLASH_2   |   The Medium Endurance SAS Flash drive can be used for the   Extreme Performance storage pool and for the FAST Cache.   |
-      |   7   |   SAS_FLASH_3   |   The Low Endurance SAS Flash drive can be used for the Extreme   Performance storage pool tier but not for the FAST Cache.   |
-      |   8   |   SAS_FLASH_4   |   The Read Intensive SAS Flash drive can be used for the Extreme   Performance storage pool tier but not for the FAST Cache.   |
+      |   1   |   SAS   |   The Serial attached SCSI (SAS) drive can be used for the<br>  Performance storage tier.  This drive type provides high<br>  performance and medium capacity storage for applications<br>  that requires a balance between performance and capacity.   |
+      |   2   |   NL_SAS   |   The Near-line serial attached SCSI (NL-SAS) drive can be used<br>  for the Capacity storage tier. This drive type provides<br>  high capacity storage, but with lower overall performance<br>  than regular SAS and Flash drives.   |
+      |   6   |   SAS_FLASH_2   |   The Medium Endurance SAS Flash drive can be used for the<br>  Extreme Performance storage pool and for the FAST Cache.   |
+      |   7   |   SAS_FLASH_3   |   The Low Endurance SAS Flash drive can be used for the Extreme<br>  Performance storage pool tier but not for the FAST Cache.   |
+      |   8   |   SAS_FLASH_4   |   The Read Intensive SAS Flash drive can be used for the Extreme<br>  Performance storage pool tier but not for the FAST Cache.   |
       |   9   |   SAS_FLASH_5   |   Even lower endurance SAS flash drive cannot be used for FAST Cache.   |
-      |   10   |   NVMe_FLASH_1   |   The Low Endurance NVMe Flash drive can be used for the NVMe Extreme   Performance storage pool tier but not for the FAST Cache.   |
+      |   10   |   NVMe_FLASH_1   |   The Low Endurance NVMe Flash drive can be used for the NVMe Extreme<br>  Performance storage pool tier but not for the FAST Cache.   |
       |   11   |   NVMe_FLASH_2   |   The Read Intensive NVMe Flash drive can only be used for the NVMe Extreme Performance Pool and cannot be used for FAST Cache.   |
-      |   50   |   Mixed   |   Applies only as an attribute value of an object containing mixed different types of drives.   Drive cannot have this type.   |
+      |   50   |   Mixed   |   Applies only as an attribute value of an object containing mixed different types of drives.<br>  Drive cannot have this type.   |
       |   99   |   Virtual   |      |
     enum: [1,2,6,7,8,9,10,11,50,99]
   DiskTierEnum:
@@ -59818,11 +59818,11 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   0   |   Unknown   |   Unsupported drive type.   |
-      |   5   |   SAS   |   The Serial attached SCSI (SAS) drive can be used for   Performance storage tier.   |
-      |   9   |   SAS_FLASH   |   The SAS Flash drive can be used for Extreme   Performance storage pool tier and the FAST Cache.   |
-      |   10   |   NL_SAS   |   The Near-line serial attached SCSI (NL-SAS) drive type can be   used for the Capacity storage tier.   |
-      |   11   |   SAS_FLASH_2   |   The Medium Endurance SAS Flash drive can be used for   the Extreme Performance storage pool and for the FAST   Cache.   |
-      |   12   |   SAS_FLASH_3   |   The Low Endurance SAS Flash drive can be used for the Extreme   Performance storage pool tier but not for the FAST Cache.   |
+      |   5   |   SAS   |   The Serial attached SCSI (SAS) drive can be used for<br>  Performance storage tier.   |
+      |   9   |   SAS_FLASH   |   The SAS Flash drive can be used for Extreme<br>  Performance storage pool tier and the FAST Cache.   |
+      |   10   |   NL_SAS   |   The Near-line serial attached SCSI (NL-SAS) drive type can be<br>  used for the Capacity storage tier.   |
+      |   11   |   SAS_FLASH_2   |   The Medium Endurance SAS Flash drive can be used for<br>  the Extreme Performance storage pool and for the FAST<br>  Cache.   |
+      |   12   |   SAS_FLASH_3   |   The Low Endurance SAS Flash drive can be used for the Extreme<br>  Performance storage pool tier but not for the FAST Cache.   |
       |   16   |   NVMe_FLASH   |   The NVMe Flash drive can be used for the NVMe Extreme Performance storage pool tier.   |
       |   18   |   NVMe_FLASH_1   |   The Low Endurance NVMe Flash drive can be used for the NVMe Extreme Performance storage pool tier but not for the FAST Cache.   |
       |   19   |   NVMe_FLASH_2   |   The Read Intensive NVMe FLASH drive can only be used for NVMe Extreme Performance storage pool but not for the FAST Cache.   |
@@ -60173,7 +60173,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   1   |   High   |   High relocation rate.   |
       |   2   |   Medium   |   Medium relocation rate.   |
       |   3   |   Low   |   Low relocation rate.   |
-      |   4   |   None   |   Relocation rate is not initialized by the storage system.   Do not use this value in Modify requests: the storage system will respond with error.   |
+      |   4   |   None   |   Relocation rate is not initialized by the storage system.<br>  Do not use this value in Modify requests: the storage system will respond with error.   |
     enum: [1,2,3,4]
   FastVPStatusEnum:
     x-tags:
@@ -60424,8 +60424,8 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   0   |   Off   |   FLR is OFF on the file system.   |
-      |   1   |   Enterprise   |   FLR enterprise type is enabled on the file system.  FLR enterprise type protects data content from changes made by users through CIFS, NFS, and FTP. It is intended for self-regulated archiving.   |
-      |   2   |   Compliance   |   FLR compliance type is enabled on the file system.  FLR compliance type protects data content from changes made by users through CIFS, NFS, and FTP, from changes made by administrators, and also meets the requirements of SEC rule 17a-4(f). It is intended to assist those companies that have to comply with regulations such as SEC rule 17a-4(f). The main difference between enterprise and compliance include compliance does write verify to ensure the quality and accuracy of the storage media recording process and prevents any modification or deletion of protected files by administrators.   |
+      |   1   |   Enterprise   |   FLR enterprise type is enabled on the file system.<br> FLR enterprise type protects data content from changes made by users through CIFS, NFS, and FTP. It is intended for self-regulated archiving.   |
+      |   2   |   Compliance   |   FLR compliance type is enabled on the file system.<br> FLR compliance type protects data content from changes made by users through CIFS, NFS, and FTP, from changes made by administrators, and also meets the requirements of SEC rule 17a-4(f). It is intended to assist those companies that have to comply with regulations such as SEC rule 17a-4(f). The main difference between enterprise and compliance include compliance does write verify to ensure the quality and accuracy of the storage media recording process and prevents any modification or deletion of protected files by administrators.   |
     enum: [0,1,2]
   FSFormatEnum:
     x-tags:
@@ -61211,9 +61211,9 @@ If this value is not null then call home suppression is enabled, otherwise call 
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
-      |   0   |   Custom   |   Use the custom Kerberos Domain Controller for secure NFS service.         This requires a configured Kerberos server and an uploaded Kerberos key table file.   |
-      |   1   |   Unix   |   Use the Unix Kerberos Domain Controller (MIT/Heimdal) for secure NFS service.         This requires a configured Kerberos server.   |
-      |   2   |   Windows   |   Use the Windows Kerberos Domain Controller for secure NFS service.       This requires a configured SMB server joined to an Active Directory domain.   |
+      |   0   |   Custom   |   Use the custom Kerberos Domain Controller for secure NFS service.<br>        This requires a configured Kerberos server and an uploaded Kerberos key table file.   |
+      |   1   |   Unix   |   Use the Unix Kerberos Domain Controller (MIT/Heimdal) for secure NFS service.<br>        This requires a configured Kerberos server.   |
+      |   2   |   Windows   |   Use the Windows Kerberos Domain Controller for secure NFS service.<br>      This requires a configured SMB server joined to an Active Directory domain.   |
     enum: [0,1,2]
   KeyManagerBackupKeysStatusEnum:
     x-tags:
@@ -61328,7 +61328,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   1   |   GenericStorage   |   Generic Storage Volume, i.e. LUN associated with Consistency group.   |
-      |   2   |   Standalone   |   Standalone Storage Volume (LUN),    not associated with Consistency group.   |
+      |   2   |   Standalone   |   Standalone Storage Volume (LUN), <br>  not associated with Consistency group.   |
       |   3   |   VmWareISCSI   |   VMWare Storage Volume for VMFS datastore.   |
     enum: [1,2,3]
   MetricTypeEnum:
@@ -61414,12 +61414,12 @@ If this value is not null then call home suppression is enabled, otherwise call 
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
-      |   0   |   Idle   |   With an idle priority the migration session there is no copy I/O   generated.  The migration session will continue to mirror host I/O.   |
-      |   1   |   Low   |   The low priority is designated for migration sessions that have    the least precedence over other migration sessions.   |
-      |   2   |   Below_Normal   |   Migration sessions that have a below normal priority are slightly    less critical than the average (or normal) migration session.   |
+      |   0   |   Idle   |   With an idle priority the migration session there is no copy I/O <br> generated.  The migration session will continue to mirror host I/O.   |
+      |   1   |   Low   |   The low priority is designated for migration sessions that have <br>  the least precedence over other migration sessions.   |
+      |   2   |   Below_Normal   |   Migration sessions that have a below normal priority are slightly <br>  less critical than the average (or normal) migration session.   |
       |   3   |   Normal   |   The default priority that is appropriate for most use cases.   |
-      |   4   |   Above_Normal   |   Migration sessions that have an above normal priority are slightly    more critical than the average (or normal) migration session.   |
-      |   5   |   High   |   The high priority is reserved for migration sessions that take     the highest precedence over other migration sessions.   |
+      |   4   |   Above_Normal   |   Migration sessions that have an above normal priority are slightly <br>  more critical than the average (or normal) migration session.   |
+      |   5   |   High   |   The high priority is reserved for migration sessions that take <br>   the highest precedence over other migration sessions.   |
     enum: [0,1,2,3,4,5]
   MoveSessionStateEnum:
     x-tags:
@@ -61431,10 +61431,10 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   0   |   Initializing   |   The migration session is in the process of initializing.   |
-      |   1   |   Queued   |   The migration session is queued to run.   The system will begin the data    transfer when there are sufficient resources.   |
-      |   2   |   Running   |   The running state indicates that the migration session is transferring    data.   |
-      |   3   |   Failed   |   The migration session has failed.  Consult the health of migration session    for more details.   |
-      |   4   |   Cancelling   |   The cancelling state indicates that the migration session is in the process of   being cancelled   |
+      |   1   |   Queued   |   The migration session is queued to run.   The system will begin the data <br>  transfer when there are sufficient resources.   |
+      |   2   |   Running   |   The running state indicates that the migration session is transferring <br>  data.   |
+      |   3   |   Failed   |   The migration session has failed.  Consult the health of migration session <br>  for more details.   |
+      |   4   |   Cancelling   |   The cancelling state indicates that the migration session is in the process of<br>  being cancelled   |
       |   5   |   Cancelled   |   The cancelled state indicates that the migration session has been cancelled.   |
       |   6   |   Completed   |   The data transfer for the migration session has completed.   |
     enum: [0,1,2,3,4,5,6]
@@ -61448,8 +61448,8 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   0   |   OK   |   The migration(move) object is operating normally   |
-      |   1   |   PoolOffline   |   The pool went offline and the migration cannot continue.  Please remove the migration session,    address the issue, and recreate the migration session   |
-      |   2   |   PoolOutOfSpace   |   The pool exhausted the space available and the migration cannot continue.     Please remove the migration session, address the issue, and recreate the migration session.   |
+      |   1   |   PoolOffline   |   The pool went offline and the migration cannot continue.  Please remove the migration session, <br>  address the issue, and recreate the migration session   |
+      |   2   |   PoolOutOfSpace   |   The pool exhausted the space available and the migration cannot continue.  <br>  Please remove the migration session, address the issue, and recreate the migration session.   |
       |   3   |   InternalError   |   The managed object encountered an internal error.  Please contact your service provider.   |
     enum: [0,1,2,3]
   MoveSessionThrottleEnum:
@@ -61568,10 +61568,10 @@ If this value is not null then call home suppression is enabled, otherwise call 
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
-      |   0   |   Sys   |   Allow user to authenticate with any NFS security types:    UNIX, Kerberos, Kerberos with integrity and Kerberos   with encryption.   |
+      |   0   |   Sys   |   Allow user to authenticate with any NFS security types: <br>  UNIX, Kerberos, Kerberos with integrity and Kerberos<br>  with encryption.   |
       |   1   |   Kerberos   |   Allow only Kerberos security for user authentication.   |
-      |   2   |   KerberosWithIntegrity   |   Allow only Kerberos with integrity and    Kerberos with encryption security    for user authentication.   |
-      |   3   |   KerberosWithEncryption   |   Allow only Kerberos with encryption security   for user authentication.   |
+      |   2   |   KerberosWithIntegrity   |   Allow only Kerberos with integrity and <br>  Kerberos with encryption security <br>  for user authentication.   |
+      |   3   |   KerberosWithEncryption   |   Allow only Kerberos with encryption security<br>  for user authentication.   |
     enum: [0,1,2,3]
   NFSTypeEnum:
     x-tags:
@@ -61849,8 +61849,8 @@ If this value is not null then call home suppression is enabled, otherwise call 
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
-      |   1   |   Blocks   |   Calculates drive usage in terms of file system blocks (8 KB units)  and the usage of all files including directories and symbolic links. With  this policy, any operation resulting in allocation of blocks or removal of  blocks such as creating, expanding, or deleting a directory; writing or  deleting files; or creating or deleting symbolic links changes block usage.  <br>  Note: When using the blocks policy, the user can create a sparse file whose  size is large (more than the limit), but that actually uses few blocks on the drive.   |
-      |   0   |   File_Size   |   Calculates drive usage only in terms of logical file sizes, ignoring directory  sizes and symbolic links. Use this policy where file sizes are critical to  quotas, such as where user usage is based on the size of the files created,  and where sizes or their sum exceeding the limit is unacceptable. This policy  is recommended in CIFS environments. With this policy , block usage depends  solely on the number of bytes added to or removed from the file. Usage depends  only on changes to a regular file. Directories and symbolic links are not considered.   |
+      |   1   |   Blocks   |   Calculates drive usage in terms of file system blocks (8 KB units)<br> and the usage of all files including directories and symbolic links. With<br> this policy, any operation resulting in allocation of blocks or removal of<br> blocks such as creating, expanding, or deleting a directory; writing or<br> deleting files; or creating or deleting symbolic links changes block usage.<br> <br><br> Note: When using the blocks policy, the user can create a sparse file whose<br> size is large (more than the limit), but that actually uses few blocks on the drive.   |
+      |   0   |   File_Size   |   Calculates drive usage only in terms of logical file sizes, ignoring directory<br> sizes and symbolic links. Use this policy where file sizes are critical to<br> quotas, such as where user usage is based on the size of the files created,<br> and where sizes or their sum exceeding the limit is unacceptable. This policy<br> is recommended in CIFS environments. With this policy , block usage depends<br> solely on the number of bytes added to or removed from the file. Usage depends<br> only on changes to a regular file. Directories and symbolic links are not considered.   |
     enum: [1,0]
   QuotaStateEnum:
     x-tags:
@@ -62131,8 +62131,8 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   0   |   Not_Replicated   |   NAS object is not replicated over to the destination.   |
-      |   1   |   Replicated   |   NAS object is automatically synchronized over to the replication destination.   Any modify or delete operations at the source will automatically be reflected on the destination.   |
-      |   2   |   Overridden   |   NAS object has been manually modified or overridden on the replication destination.   Modifications on the source NAS server will have no effect on the overridden object   on the replication destination.   |
+      |   1   |   Replicated   |   NAS object is automatically synchronized over to the replication destination.<br>  Any modify or delete operations at the source will automatically be reflected on the destination.   |
+      |   2   |   Overridden   |   NAS object has been manually modified or overridden on the replication destination.<br>  Modifications on the source NAS server will have no effect on the overridden object<br>  on the replication destination.   |
     enum: [0,1,2]
   ReplicationSessionNetworkStatusEnum:
     x-tags:
@@ -62693,7 +62693,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   0   |   Not_Marked_For_Replication   |   Replication was not requested for this snap.   |
       |   1   |   Marked_For_Replication   |   Replication was requested for this snap and it is waiting for a replication sync.   |
       |   2   |   Replicated_On_Destination   |   This snap was replicated to the destination successfully.   |
-      |   3   |   Failed_To_Replicate   |   This snap was marked for replication but failed to replicate successfully   Check Alert for detailed descriptions and recommended actions.   |
+      |   3   |   Failed_To_Replicate   |   This snap was marked for replication but failed to replicate successfully<br>  Check Alert for detailed descriptions and recommended actions.   |
       |   4   |   In_Progress   |   This snap was being transferred by replication.   |
     enum: [0,1,2,3,4]
   SnapStateEnum:
@@ -62823,7 +62823,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   0   |   None   |   SSL protocol: None.   |
-      |   1   |   StartTLS   |   SSL protocol feature: startTLS.   startTLS is a protocol feature which allows SSL and plain text connections to co-exist on the same port.   After sending this startTLS command, both client/server switch to TLS/SSL mode, and cannot switch back to plain text mode.   |
+      |   1   |   StartTLS   |   SSL protocol feature: startTLS.<br>  startTLS is a protocol feature which allows SSL and plain text connections to co-exist on the same port.<br>  After sending this startTLS command, both client/server switch to TLS/SSL mode, and cannot switch back to plain text mode.   |
       |   2   |   SSL_TLS   |   SSL protocol: SSL.   |
     enum: [0,1,2]
   SSLStrengthEnum:
@@ -62850,7 +62850,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   1   |   Traditional   |   Traditional pool. Traditional pools use traditional fixed size RAID groups of entire disks.   |
-      |   2   |   Dynamic   |   Dynamic pool. Dynamic pools utilize advanced RAID technology to support larger drives,    faster rebuild times, and improved storage utilization.   |
+      |   2   |   Dynamic   |   Dynamic pool. Dynamic pools utilize advanced RAID technology to support larger drives, <br>  faster rebuild times, and improved storage utilization.   |
     enum: [1,2]
   StorageProcessorEnum:
     x-tags:
@@ -62970,7 +62970,7 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |  ----  | ----  | ---- |
       |   0   |   False   |   The storage resource is not thin-provisioned.   |
       |   1   |   True   |   The storage resource is thin-provisioned.   |
-      |   65,535   |   Mixed   |   (Applies only to Consistency groups).   If some LUNs in a Consistency group are thin-provisioned    but other LUNs are not non-provisioned then the Mixed value is returned    for this Consistency group.   Do not use Mixed value in creation or modification requests:   the storage system will respond with error.   |
+      |   65,535   |   Mixed   |   (Applies only to Consistency groups).<br>  If some LUNs in a Consistency group are thin-provisioned <br>  but other LUNs are not non-provisioned then the Mixed value is returned <br>  for this Consistency group.<br>  Do not use Mixed value in creation or modification requests:<br>  the storage system will respond with error.   |
     enum: [0,1,65535]
   ThumbprintAlgoTypeEnum:
     x-tags:
@@ -63001,12 +63001,12 @@ If this value is not null then call home suppression is enabled, otherwise call 
 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
-      |   0   |   Autotier_High   |   The storage resource data will be initially placed on the highest available tier    and then optimaly distributed over the pool's tiers by auto-tiering algorithm.   <br>   This is a default value for most storage resource types.   |
-      |   1   |   Autotier   |   The storage resource data will be optimally distributed over the    pool's tiers according to the auto-tiering algorithm.   |
+      |   0   |   Autotier_High   |   The storage resource data will be initially placed on the highest available tier <br>  and then optimaly distributed over the pool's tiers by auto-tiering algorithm.<br>  <br><br>  This is a default value for most storage resource types.   |
+      |   1   |   Autotier   |   The storage resource data will be optimally distributed over the <br>  pool's tiers according to the auto-tiering algorithm.   |
       |   2   |   Highest   |   The storage resource data will be placed on the highest available tier.   |
       |   3   |   Lowest   |   The storage resource data will be placed on the lowest available tier.   |
-      |   4   |   No_Data_Movement   |   The storage resource data will not be moved between pool's teirs by auto-tiering algorithm.    <br>   No longer supported.   <br>   Please specify a different tiering policy.   If you use this value in Create or Modify requests,    the system will return an error.   |
-      |   65,535   |   Mixed   |   (Applies to consistency groups only.)   Indicates that the LUNs contained in a consistency group have different pool tiering policies.   <br>   <b>Note:</b>    This value applies only to the relocationPolicy attribute of the Consistency group storage resource type.    <br>   If you use this value in Create or Modify requests,   an error will be returned.   |
+      |   4   |   No_Data_Movement   |   The storage resource data will not be moved between pool's teirs by auto-tiering algorithm. <br>  <br><br>  No longer supported.<br>  <br><br>  Please specify a different tiering policy.<br>  If you use this value in Create or Modify requests, <br>  the system will return an error.   |
+      |   65,535   |   Mixed   |   (Applies to consistency groups only.)<br>  Indicates that the LUNs contained in a consistency group have different pool tiering policies.<br>  <br><br>  <b>Note:</b> <br>  This value applies only to the relocationPolicy attribute of the Consistency group storage resource type. <br>  <br><br>  If you use this value in Create or Modify requests,<br>  an error will be returned.   |
     enum: [0,1,2,3,4,65535]
   TierTypeEnum:
     x-tags:
@@ -63018,10 +63018,10 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   Value   |   Name   |   Description   |
       |  ----  | ----  | ---- |
       |   0   |   None   |   The disks in the storage pool has no tier type.   |
-      |   5   |   NVMe_Extreme_Performance   |   This storage pool tier provides very fast access times for   resources and subjects with low latency to variable workloads.   It contains all supported NVMe Flash Disks.   |
-      |   10   |   Extreme_Performance   |   This storage pool tier provides very fast access times for   resources and subjects to variable workloads.   It contains all supported SAS Flash Disks.   |
-      |   20   |   Performance   |   This storage pool tier provides high throughput and good   bandwidth at a mid-level price point.   It contains all supported SAS disks.   |
-      |   30   |   Capacity   |   This storage pool tier provides the highest storage capacity   with generally lower performance.   It contains all supported NL-SAS disks.   |
+      |   5   |   NVMe_Extreme_Performance   |   This storage pool tier provides very fast access times for<br>  resources and subjects with low latency to variable workloads.<br>  It contains all supported NVMe Flash Disks.   |
+      |   10   |   Extreme_Performance   |   This storage pool tier provides very fast access times for<br>  resources and subjects to variable workloads.<br>  It contains all supported SAS Flash Disks.   |
+      |   20   |   Performance   |   This storage pool tier provides high throughput and good<br>  bandwidth at a mid-level price point.<br>  It contains all supported SAS disks.   |
+      |   30   |   Capacity   |   This storage pool tier provides the highest storage capacity<br>  with generally lower performance.<br>  It contains all supported NL-SAS disks.   |
     enum: [0,5,10,20,30]
   TsCloudProviderOpStatusEnum:
     x-tags:
@@ -63216,8 +63216,8 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |  ----  | ----  | ---- |
       |   0   |   NFS   |   Only NFS sharing protocol supported by VDM.   |
       |   1   |   CIFS   |   Only SMB (also known as CIFS) sharing protocol is supported by VDM.   |
-      |   2   |   Multiprotocol   |   Both SMB (also known as CIFS) and NFS sharing protocols are supported by VDM.  A file system can be shared via both NFS and CIFS simultaneously.   |
-      |   3   |   CIFSAndNFS   |   Both CIFS and NFS sharing protocols are supported by VDM.    Any file system can only be share with one or the other.   |
+      |   2   |   Multiprotocol   |   Both SMB (also known as CIFS) and NFS sharing protocols are supported by VDM.<br> A file system can be shared via both NFS and CIFS simultaneously.   |
+      |   3   |   CIFSAndNFS   |   Both CIFS and NFS sharing protocols are supported by VDM. <br>  Any file system can only be share with one or the other.   |
     enum: [0,1,2,3]
   VMDiskTypeEnum:
     x-tags:
@@ -63231,8 +63231,8 @@ If this value is not null then call home suppression is enabled, otherwise call 
       |   0   |   Unknown   |   Virtual Machine disk type unknown.   |
       |   1   |   VMFS_Thick   |   Virtual Machine disk type thick.   |
       |   2   |   VMFS_Thin   |   Virtual Machine disk type thin.   |
-      |   3   |   RDM_Physical   |   Physical compatibility mode (pass-through) raw disk mapping. An rdmp    virtual disk passes SCSI commands directly to the hardware, but the    virtual disk cannot participate in snapshots. (from vSphere API description)   |
-      |   4   |   RDM_Virtual   |   Virtual compatibility mode raw disk mapping. An rdm virtual disk    grants access to the entire raw disk and the virtual disk can    participate in snapshots. (from vSphere API description)   |
+      |   3   |   RDM_Physical   |   Physical compatibility mode (pass-through) raw disk mapping. An rdmp <br>  virtual disk passes SCSI commands directly to the hardware, but the <br>  virtual disk cannot participate in snapshots. (from vSphere API description)   |
+      |   4   |   RDM_Virtual   |   Virtual compatibility mode raw disk mapping. An rdm virtual disk <br>  grants access to the entire raw disk and the virtual disk can <br>  participate in snapshots. (from vSphere API description)   |
     enum: [0,1,2,3,4]
   VMPowerStateEnum:
     x-tags:
